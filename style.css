@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+}
+
+li, a, button{
+    font-family: 'Lobster', cursive;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: rgb(75,132,125);
+    text-decoration: none;
+}
+li, a, button:hover{
+    color:  rgb(8, 70, 62);
+} 
+
+section{
+    padding: 5em 2em;
+}
+
+.navbar {
+    padding: 9px 10px !important;
+    font-family: 'Lobster', cursive;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(75,132,125);
+    color: rgb(218,226,213);
+}
+
+.brand-title {
+    cursor: pointer;
+    font-family: 'Lobster', cursive;
+    font-size: 3.5rem;
+    margin: .8rem;
+}
+
+.brand-title:hover {
+    color: rgb(8, 70, 62);
+}
+   
+
+
+.navbar-links {
+    height: -7rem;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    padding: .5rem 1rem;
+    display: block;
+    text-decoration: none;
+    color: rgb(218,226,213);
+    
+}
+
+.navbar:hover {
+    background: rgb(50, 110, 103);
+}
+
+.navbar-links li a:hover{
+    background: rgb(8, 70, 62);
+}
+
+
+
+.toggle-button{
+    position: absolute;
+    top: 2.2em;
+    right:1em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(218,226,213);
+    border-radius: 10px;
+    
+}
+
+.hero{
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    font-weight: 700;
+    background-color: white;
+    color: rgb(75,132,125);
+    text-align: center;
+    word-spacing: 100vw;
+    margin-top: 60px;
+}
+
+.image-lacasa{  
+    margin-top: 60px;
+    max-width: 100%;   
+}
+
+.left-about{
+    width: auto;  
+    text-align: center;     
+}
+
+.right-about{
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    font-weight: 700;
+    background-color: #FFFFFF;
+    color: rgb(75,132,125);
+    text-align: center;
+    margin-top: 60px;
+}
+
+.slideshow-container{
+    text-align: center;
+    margin-top: 60px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshow-slide{
+    display: flex;
+    height: 400px;
+}
+
+#prevBtn{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 2em;
+    opacity: 0.9;
+    color:white;
+}
+
+#nextBtn{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 2em;
+    opacity: 0.9;
+    color:white
+}
+
+.meny-container{
+    position: relative;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    background-color: rgb(218,226,213);
+    color: rgb(75,132,125);
+    font-size: 2em;
+    font-weight: 700;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding: 3em;
+
+
+}
+
+.meny-menu{
+    justify-content: flex-start;
+    padding: 20px;;
+    width: 100%;
+}
+.meny-child-first{
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center; // MEDIA QUity za meny
+    margin-top: 60px;
+}
+.meny-child-second{
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.meny-btn{
+    padding:1rem;
+    font-size: 1em; 
+    font-weight: 500;
+    background-color: aliceblue;
+    border-color: rgb(75,132,125);
+    border-radius: 1.5rem;
+    cursor: pointer;;
+
+
+}
+
+
+.contact-container{
+    font-family: 'Lobster', cursive;
+    display: flex;
+    background-color: #FFFFFF;
+    color: rgb(75,132,125);
+    font-size: 1.5em;
+    font-weight: 700;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    max-width: 100%;
+    line-height: 4rem;
+}
+
+.boking-container{
+    font-family: 'Lobster', cursive;
+    display: block;
+    text-align: center;
+    background-color: rgb(218,226,213);
+    color: rgb(75,132,125);
+    font-size: 1.5em;
+    font-weight: 700;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    max-width: 100%;
+    line-height: 7rem;
+}
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+/* responsive Navbar with hamburger menu*/
+@media (max-width: 600px) {
+    .toggle-button{
+        display: flex;
+    }
+    
+    .navbar-links{
+        display:none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        width: 100%;
+        text-align: center;
+        padding: 0px 20px;
+    }   
+    .navbar-links li a {
+       
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+}
