@@ -187,7 +187,7 @@ section{
 .meny-child-first{
     font-size: 1em;
     font-weight: 500;
-    text-align: center; // MEDIA QUity za meny
+    text-align: center; 
     margin-top: 60px;
 }
 .meny-child-second{
@@ -209,43 +209,162 @@ section{
 
 }
 
-
-.contact-container{
-    font-family: 'Lobster', cursive;
+.contact{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contact .title{
     display: flex;
-    background-color: #FFFFFF;
-    color: rgb(75,132,125);
-    font-size: 1.5em;
-    font-weight: 700;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
-    max-width: 100%;
-    line-height: 4rem;
+    font-size: 2em;
 }
-
-.boking-container{
+.contact .title h2{
     font-family: 'Lobster', cursive;
-    display: block;
-    text-align: center;
-    background-color: rgb(218,226,213);
-    color: rgb(75,132,125);
     font-size: 1.5em;
-    font-weight: 700;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-    max-width: 100%;
-    line-height: 7rem;
+    font-weight: 500;
+    color: rgb(75,132,125);
 }
- 
- 
 
+.box{
+    position: relative;
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+}
+.contact{
+    padding: 40px;
+    background:rgb(75,132,125);
+    box-shadow: 0 5px 35px rgba(0,0,0,0.2);
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+    "form info"
+    "form map";
+    grid-gap: 20px;
+}
+.contact h3{
+    font-family: 'Lobster', cursive;
+    color: rgb(105, 170, 163);
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 200;
+}
+/* Form box */
+.formBox{
+    position: relative;
+    width: 100%;
+    
+}
+.formBox .row50{
+   display: flex;
+   gap:20px;
 
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.formBox .row100 .inputBox{
+    width: 100%;
 
+}
+.inputBox span{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: rgb(105, 170, 163);
+}
+.inputBox input{
+    padding: 10px; 
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid rgb(38, 136, 126);
 
+}
+ .inputBox textarea{
+     padding:10px;
+     font-size: 1.1em;
+     outline:none;
+     border: 1px solid rgba(0,0,0,0.2);
+     resize: none;
+     min-height: 220px;
+     margin-bottom: 10px;
+ }
+.inputBox input [type="submit"]{
+    background: white;
+    color:  rgb(38, 136, 126);
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+ }
+
+ .inbutBox input ::placeholder{
+    color: #999;
+ }
+
+ .info{
+     background: #FFFFFF;
+ }
+ .info .infoBox div{
+     display: flex;
+     align-items: center;
+     margin-bottom: 10px;
+ }
+ .info .infoBox div span{
+     min-width: 40px;
+     height: 40px;
+     color: #FFFFFF;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: rgb(38, 136, 126);
+     border-radius:50%;
+     margin-right: 15px;
+ }
+.info .infoBox div p{
+        color: rgb(75,132,125);
+        font-family: 'Lobster', cursive;
+        font-weight: bold;
+}   
+.info .infoBox div a{
+        color: rgb(75,132,125);
+        text-decoration: none;
+}
+
+.sci{
+    margin-top: 40px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+.sci li a{
+    color: rgb(75,132,125);
+    font-size: 2em;
+    
+}
+.sci li a:hover{
+    color: rgb(14, 75, 69);
+}
 
 
 
