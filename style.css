@@ -208,23 +208,24 @@ section{
 
 
 }
-
 .contact{
-    position: relative;
-    width: 100%;
-    padding: 40px 100px;
+    padding:40px;
+    background:rgb(75,132,125);
+    box-shadow: 0 5px 35px rgba(0,0,0,0.2);
+    margin-top: -2em;
 }
 .contact .title{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2em;
+    margin-bottom: 3em;
 }
 .contact .title h2{
     font-family: 'Lobster', cursive;
     font-size: 1.5em;
     font-weight: 500;
-    color: rgb(75,132,125);
+    color:rgb(105, 170, 163);
 }
 
 .box{
@@ -239,11 +240,7 @@ section{
 .map{
     grid-area: map;
 }
-.contact{
-    padding: 40px;
-    background:rgb(75,132,125);
-    box-shadow: 0 5px 35px rgba(0,0,0,0.2);
-}
+
 .box{
     position: relative;
     display: grid;
@@ -365,17 +362,13 @@ section{
 .sci li a:hover{
     color: rgb(14, 75, 69);
 }
-
-
-
-
-
-
-
-
-
-
-
+.map{
+    padding: 0px;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
 
 
 
@@ -416,4 +409,39 @@ section{
     .navbar-links.active{
         display: flex;
     }
+}
+
+@media (max-width: 991px){
+    body{
+        background: #f5f5f5;
+    }
+    .contact{
+        padding: 20px;
+    }
+    .box{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "form"
+        "info"
+        "map";
+
+    }
+    
+    .formBox .row50{
+        flex-direction: column;
+        display: flex;
+        gap:o;
+    }
+    .inputBox{
+        width: 100%;
+    }
+    .contact{
+        padding: 30px;  
+    }
+    .map{
+        min-height: 300px;
+        padding: 0;
+    }
+
 }
