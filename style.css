@@ -4,13 +4,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;  
+    background: #001C27;
 }
 
 li, a, button{
     font-family: 'Lobster', cursive;
     font-weight: 700;
     font-size: 1.1em;
-    color: rgb(75,132,125);
+    color: #001C27;
     text-decoration: none;
 }
 li, a, button:hover{
@@ -29,7 +30,7 @@ section{
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(75,132,125);
+    background-color: #001C27;
     color: rgb(218,226,213);
 }
 
@@ -68,15 +69,9 @@ section{
     
 }
 
-.navbar:hover {
-    background: rgb(50, 110, 103);
-}
-
 .navbar-links li a:hover{
-    background: rgb(8, 70, 62);
+    background:rgb(8, 70, 62);
 }
-
-
 
 .toggle-button{
     position: absolute;
@@ -101,7 +96,7 @@ section{
     font-family: 'Lobster', cursive;
     font-size: 3em;
     font-weight: 700;
-    background-color: white;
+    background-color:#001C27;
     color: rgb(75,132,125);
     text-align: center;
     word-spacing: 100vw;
@@ -122,7 +117,8 @@ section{
     font-family: 'Lobster', cursive;
     font-size: 2em;
     font-weight: 700;
-    background-color: #FFFFFF;
+    line-height: 2em;
+    background-color: #001C27;
     color: rgb(75,132,125);
     text-align: center;
     margin-top: 60px;
@@ -167,7 +163,7 @@ section{
     position: relative;
     font-family: 'Lobster', cursive;
     display: flex;
-    background-color: rgb(218,226,213);
+    background-color: #001C27;
     color: rgb(75,132,125);
     font-size: 2em;
     font-weight: 700;
@@ -198,19 +194,20 @@ section{
 }
 
 .meny-btn{
-    padding:1rem;
+    padding: 0.5rem;
     font-size: 1em; 
     font-weight: 500;
-    background-color: aliceblue;
+    background-color: #001C27;
     border-color: rgb(75,132,125);
-    border-radius: 1.5rem;
-    cursor: pointer;;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    color: rgb(75,132,125);
 
 
 }
 .contact{
     padding:40px;
-    background:rgb(75,132,125);
+    background:#001C27;
     box-shadow: 0 5px 35px rgba(0,0,0,0.2);
     margin-top: -2em;
 }
@@ -239,6 +236,7 @@ section{
 }
 .map{
     grid-area: map;
+    background: #FFFFFF;
 }
 
 .box{
@@ -275,10 +273,18 @@ section{
     flex-direction: column;
     margin-bottom: 10px;
     width: 50%;
+    color: rgb(38, 136, 126);
 }
 .formBox .row100 .inputBox{
     width: 100%;
 
+}
+.formBox .row200{
+    gap:20px;
+    position: absolute;
+    left: 43%;
+    width: 30%;
+    cursor: pointer;
 }
 .inputBox span{
     margin-top: 10px;
@@ -287,26 +293,30 @@ section{
     color: rgb(105, 170, 163);
 }
 .inputBox input{
+    color: rgb(38, 136, 126);
     padding: 10px; 
-    font-size: 1.1em;
+    font-size: 1.2em;
     outline: none;
-    border: 1px solid rgb(38, 136, 126);
+    border: 2px solid rgb(38, 136, 126);
+    border-radius: 15px;
 
 }
  .inputBox textarea{
      padding:10px;
+     color: rgb(38, 136, 126);
      font-size: 1.1em;
      outline:none;
-     border: 1px solid rgba(0,0,0,0.2);
+     border: 2x solid rgba(0,0,0,0.2);
      resize: none;
      min-height: 220px;
      margin-bottom: 10px;
+     border-radius: 15px;
  }
 .inputBox input [type="submit"]{
     background: white;
     color:  rgb(38, 136, 126);
     border: none;
-    font-size: 1.1em;
+    font-size: 1.3em;
     max-width: 120px;
     font-weight: 500;
     cursor: pointer;
@@ -317,9 +327,7 @@ section{
     color: #999;
  }
 
- .info{
-     background: #FFFFFF;
- }
+
  .info .infoBox div{
      display: flex;
      align-items: center;
@@ -332,7 +340,7 @@ section{
      display: flex;
      justify-content: center;
      align-items: center;
-     background: rgb(38, 136, 126);
+     background: #001C27;
      border-radius:50%;
      margin-right: 15px;
  }
@@ -372,7 +380,7 @@ section{
 
 .footer{
     position: relative;
-    background: rgb(75,132,125);
+    background: #001C27;
     width: 100%;
     min-height: 100px;
     padding: 20px 10px;
@@ -396,21 +404,6 @@ section{
     font-size: 1em;
     font-weight: 500;
 }
-
-.animate h1{
-    font-family: 'Lobster', cursive;
-    font-size: 3em;
-    font-weight: 700;
-    background-color: white;
-    color: rgb(75,132,125);
-    text-align: center;
-    word-spacing: 100vw;
-    margin-top: 60px;
-}
-
-
-
-
 
 
 /* On smaller screens, decrease text size */
@@ -453,7 +446,7 @@ section{
 
 @media (max-width: 991px){
     body{
-        background: #f5f5f5;
+        background: #001C27;
     }
     .contact{
         padding: 20px;
@@ -473,14 +466,19 @@ section{
         display: flex;
         gap:o;
     }
+    .formBox .row200{
+        left: 0%;
+        width: 100%;
+
+    }
     .inputBox{
         width: 100%;
     }
     .contact{
-        padding: 30px;  
+        padding: 50px;  
     }
     .map{
-        min-height: 300px;
+        min-height: 400px;
         padding: 0;
     }
 
