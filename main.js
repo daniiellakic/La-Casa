@@ -15,7 +15,9 @@ function myFunction() {
 
 */
 
-//Selectors
+
+//Slideshow
+//selectors
 const slideshowSlide = document.querySelector('.slideshow-slide');
 const slideshowImages = document.querySelectorAll('.slideshow-slide img');
 
@@ -58,6 +60,8 @@ slideshowSlide.addEventListener('transitionend', () => {
     }
 } );
 
+
+// Toggle menu
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 
@@ -65,8 +69,7 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
 });
 
-
-
+//Text Animation
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -124,4 +127,7 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-
+// Button click to open menu page
+function openPage() {
+  window.open("../menu.html");
+}
