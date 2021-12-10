@@ -140,31 +140,31 @@
             <div class="box">
                 <div class="contact form">
                     <h3>Boka Bord</h3>
-                    <form>
+                    <form class="form-form" action="https://formsubmit.co/danijellakic@yahoo.com" method="POST">
                         <div class="formBox">
                             <div class="row50">
                                 <div class="inputBox">
                                     <span>Förnamn</span>
-                                    <input type="text" placeholder="Ditt förnamn">
+                                    <input type="text" name="name" placeholder="Ditt förnamn" required>
                                 </div>
                                 <div class="inputBox">
                                     <span>Efternamn</span>
-                                    <input type="text" placeholder="Ditt efternamn">
+                                    <input type="text" name="Last Name" placeholder="Ditt efternamn" required>
                                 </div>
                                 <div class="inputBox">
                                     <span>Telefonnummer</span>
-                                    <input type="text" placeholder="070-0000000">
+                                    <input type="text" name="phone" placeholder="070-0000000" required>
                                 </div>
                                 <div class="inputBox">
                                     <span>Email</span>
-                                    <input type="text" placeholder="Email">
+                                    <input type="text" name="email" placeholder="Email" required>
                                 </div>
                             </div>
 
                             <div class="row100">
                                 <div class="inputBox">
                                     <span>Meddelande</span>
-                                    <textarea placeholder="Skriv ditt meddelnade här..."></textarea>
+                                    <textarea name="message" placeholder="Skriv ditt meddelnade här..." required></textarea>
                                 </div>
                            </div>
 
@@ -173,10 +173,9 @@
                                  <input type="submit" value="Skicka">
                                 </div>
                             </div>
-
                         </div>
-                     
                     </form>
+                    
                 </div>
                 <div class="contact info">
                     <h3>Kontaka oss</h3>
