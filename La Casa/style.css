@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+    background: #001C27;
+}
+
+li, a, button{
+    font-family: 'Lobster', cursive;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #001C27;
+    text-decoration: none;
+}
+li, a, button:hover{
+    color:  rgb(8, 70, 62);
+} 
+
+section{
+    padding: 5em 2em;
+}
+
+.navbar {
+    padding: 9px 10px !important;
+    font-family: 'Lobster', cursive;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001C27;
+    color: rgb(218,226,213);
+}
+
+.brand-title {
+    cursor: pointer;
+    font-family: 'Lobster', cursive;
+    font-size: 3.5rem;
+    margin: .6rem;
+}
+
+.brand-title:hover {
+    color: rgb(8, 70, 62);
+}
+   
+.navbar-links {
+    height: -7rem;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    padding: .5rem 1rem;
+    display: block;
+    text-decoration: none;
+    color: rgb(218,226,213);
+    
+}
+
+.navbar-links li a:hover{
+    background:rgb(8, 70, 62);
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2.7em;
+    right:1.5em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(218,226,213);
+    border-radius: 10px;
+    
+}
+
+.animate h1{
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    font-weight: 700;
+    background-color:#001C27;
+    color: rgb(105, 170, 163);
+    text-align: center;
+    word-spacing: 100vw;
+    margin-top: 60px;
+}
+
+.image-lacasa{  
+    margin-top: 60px;
+    max-width: 100%;   
+}
+
+.left-about{
+    width: auto;  
+    text-align: center;     
+}
+
+.right-about{
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 2em;
+    background-color: #001C27;
+    color: rgb(105, 170, 163);
+    text-align: center;
+    margin-top: 60px;
+}
+
+.slideshow-container{
+    text-align: center;
+    margin-top: 60px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshow-slide{
+    display: flex;
+    height: 400px;
+}
+
+#prevBtn{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 2em;
+    opacity: 0.9;
+    color:white;
+}
+
+#nextBtn{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 2em;
+    opacity: 0.9;
+    color:white
+}
+
+.hr-green{
+    border: 1px solid rgbrgb(105, 170, 163);
+}
+
+.meny-container{
+    position: relative;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    background-color: #001C27;
+    color: rgb(105, 170, 163);
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding: 1em;
+
+}
+
+.meny-menu{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.meny-laCasa h1{
+    font-size: 3em;
+}
+.meny-child-first{
+    text-align: center; 
+    margin-top: 60px;
+    
+}
+.meny-child-first h3{
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+}
+.meny-child-first p{
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+}
+.meny-child-second{
+    text-align: center; 
+    margin-top: 60px;
+    
+}
+.meny-child-second h3{
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+    
+}
+.meny-child-second p{
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.meny-btn{
+    padding: 0.5rem;
+    font-size: 1em; 
+    font-weight: 500;
+    background-color: #001C27;
+    border-color: rgb(75,132,125);
+    border-radius: 1.2rem;
+    cursor: pointer;
+    color: rgb(105, 170, 163);
+}
+.meny-btn:hover{
+    background-color: rgb(75,132,125);
+    color: #001C27;
+}
+.contact{
+    padding:40px;
+    background:#001C27;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.2);
+    margin-top: -2em;
+}
+.contact .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin-bottom: 3em;
+}
+.contact .title h2{
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+    font-weight: 500;
+    color:rgb(105, 170, 163);
+}
+
+.box{
+    position: relative;
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+    background: #FFFFFF;
+}
+
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+    "form info"
+    "form map";
+    grid-gap: 20px;
+}
+.contact h3{
+    font-family: 'Lobster', cursive;
+    color: rgb(105, 170, 163);
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 200;
+}
+/* Form box */
+.formBox{
+    position: relative;
+    width: 100%;
+    
+}
+.formBox .row50{
+   display: flex;
+   gap:20px;
+
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+    color: rgb(38, 136, 126);
+}
+.formBox .row100 .inputBox{
+    width: 100%;
+
+}
+.formBox .row200{
+    gap:20px;
+    position: absolute;
+    left: 43%;
+    width: 30%;
+    cursor: pointer;
+}
+
+.inputBox span{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: rgb(105, 170, 163);
+}
+.inputBox input{
+    color: rgb(38, 136, 126);
+    padding: 10px; 
+    font-size: 1.2em;
+    outline: none;
+    border: 2px solid rgb(38, 136, 126);
+    border-radius: 15px;
+    font-weight: bold;
+
+}
+.inputBox input:hover{
+    background-color: rgb(75,132,125);
+    color: #001C27;
+    cursor: pointer;
+    font-weight: bold;
+}
+ .inputBox textarea{
+     padding:10px;
+     color: rgb(38, 136, 126);
+     font-size: 1.1em;
+     outline:none;
+     border: 2x solid rgba(0,0,0,0.2);
+     resize: none;
+     min-height: 220px;
+     margin-bottom: 10px;
+     border-radius: 15px;
+ }
+.inputBox input [type="submit"]{
+    background: white;
+    color:  rgb(38, 136, 126);
+    border: none;
+    font-size: 1.3em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+ }
+
+ .inbutBox input ::placeholder{
+    color: #999;
+ }
+
+
+ .info .infoBox div{
+     display: flex;
+     align-items: center;
+     margin-bottom: 10px;
+ }
+ .info .infoBox div span{
+     min-width: 40px;
+     height: 40px;
+     color: #FFFFFF;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #001C27;
+     border-radius:50%;
+     margin-right: 15px;
+ }
+.info .infoBox div p{
+        color: rgb(75,132,125);
+        font-family: 'Lobster', cursive;
+        font-weight: bold;
+}   
+.info .infoBox div a{
+        color: rgb(75,132,125);
+        text-decoration: none;
+}
+
+.sci{
+    margin-top: 40px;
+    display: flex;
+    margin-left: 15px;
+}
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+.sci li a{
+    color: rgb(75,132,125);
+    font-size: 2em;
+    
+}
+.sci li a:hover{
+    color: rgb(14, 75, 69);
+}
+.map{
+    padding: 0px;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.footer{
+    position: relative;
+    background: #001C27;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer h3{
+    font-family: 'Lobster', cursive;
+    color: rgb(105, 170, 163);
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 500;
+}
+.footer p{
+    font-family: 'Lobster', cursive;
+    color: rgb(105, 170, 163);
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+/* responsive Navbar with hamburger menu*/
+@media (max-width: 600px) {
+    .toggle-button{
+        display: flex;
+    }
+    
+    .navbar-links{
+        display:none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        width: 100%;
+        text-align: center;
+        padding: 0px 20px;
+    }   
+    .navbar-links li a {
+       
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+    .meny-laCasa h1{
+        font-size: 5em;
+    }
+    .meny-child-first{
+        text-align: center; 
+        margin-top: 60px;
+        
+    }
+    .meny-child-first h3{
+        font-size: 5vw;
+        margin: 0;
+        padding: 0;
+    }
+    .meny-child-first p{
+        font-size: 5vw;
+        margin: 0;
+        padding: 0;
+    }
+    .meny-child-second{
+        text-align: center; 
+        margin-top: 60px;
+        
+    }
+    .meny-child-second h3{
+        font-size: 5vw;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .meny-child-second p{
+        font-size: 5vw;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+@media (max-width: 991px){
+    body{
+        background: #001C27;
+    }
+    .contact{
+        padding: 30px;
+    }
+    .box{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "form"
+        "info"
+        "map";
+
+    }
+    
+    .formBox .row50{
+        flex-direction: column;
+        display: flex;
+        gap:o;
+    }
+    .formBox .row200{
+        left: 0%;
+        width: 100%;
+
+    }
+    .inputBox{
+        width: 100%;
+    }
+    .contact{
+        padding: 10px;  
+    }
+    .map{
+        min-height: 400px;
+        padding: 0;
+    }
+    .sci{
+        font-size: 1.5em;
+        padding-left: 80px;
+        padding-bottom: 20px;
+    }
+
+}
+
+
