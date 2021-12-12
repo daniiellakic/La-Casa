@@ -141,23 +141,32 @@
                 <div class="contact form">
                     <h3>Boka Bord</h3>
                     <form class="form-form" action="https://formsubmit.co/danijellakic@yahoo.com" method="POST">
+                        <!--Honeypot-->
+                        <input type="text" name"_honey" style="display: none;">
+                        <!--Disable Captcha-->
+                        <input type="hidden" name="_captcha" value="false">
+
                         <div class="formBox">
                             <div class="row50">
                                 <div class="inputBox">
-                                    <span>Förnamn</span>
-                                    <input type="text" name="name" placeholder="Ditt förnamn" required>
+                                    <span>Ditt namn</span>
+                                    <input type="text" name="name" placeholder="Ditt namn" required>
                                 </div>
                                 <div class="inputBox">
-                                    <span>Efternamn</span>
-                                    <input type="text" name="Last Name" placeholder="Ditt efternamn" required>
+                                    <span>Email</span>
+                                    <input type="text" name="email" placeholder="Email" required>
                                 </div>
                                 <div class="inputBox">
                                     <span>Telefonnummer</span>
                                     <input type="text" name="phone" placeholder="070-0000000" required>
                                 </div>
                                 <div class="inputBox">
-                                    <span>Email</span>
-                                    <input type="text" name="email" placeholder="Email" required>
+                                    <span>Antal pers</span>
+                                    <input type="number" name="quantity" placeholder="1" min="1" max="10" required>
+                                </div>
+                                <div class="inputBox">
+                                    <span>Datum</span>
+                                    <input type="datetime-local" name="reservationDate" placeholder="Tid för bokning" >
                                 </div>
                             </div>
 
@@ -167,16 +176,15 @@
                                     <textarea name="message" placeholder="Skriv ditt meddelnade här..." required></textarea>
                                 </div>
                            </div>
-
                            <div class="row200">
                                 <div class="inputBox">
-                                 <input type="submit" value="Skicka">
+                                 <input type="submit" value="Boka">
                                 </div>
                             </div>
                         </div>
                     </form>
-                    
                 </div>
+
                 <div class="contact info">
                     <h3>Kontaka oss</h3>
                     <div class="infoBox">
@@ -204,8 +212,6 @@
                 </div>
             </div>
         </dvi>
-
-        </div>
     </section>
 
     <section class="footer section">
