@@ -8,7 +8,6 @@
 }
 
 li, a, button{
-    font-family: 'Lobster', cursive;
     font-weight: 700;
     font-size: 1.1em;
     color: #001C27;
@@ -24,7 +23,6 @@ section{
 
 .navbar {
     padding: 9px 10px !important;
-    font-family: 'Lobster', cursive;
     overflow: hidden;
     display: flex;
     position: relative;
@@ -35,14 +33,14 @@ section{
 }
 
 .brand-title {
-    cursor: pointer;
     font-family: 'Lobster', cursive;
+    cursor: pointer;
     font-size: 3.5rem;
     margin: .6rem;
 }
 
 .brand-title:hover {
-    color: rgb(8, 70, 62);
+    color: rgb(105, 170, 163);
 }
    
 .navbar-links {
@@ -68,8 +66,13 @@ section{
 }
 
 .navbar-links li a:hover{
-    background:rgb(8, 70, 62);
+    color:rgb(105, 170, 163);
 }
+.navbar-links li:hover a {
+    border-bottom: 2px solid rgb(105, 170, 163);
+}   
+
+
 
 .toggle-button {
     position: absolute;
@@ -90,8 +93,7 @@ section{
 }
 
 .animate h1{
-    font-family: 'Lobster', cursive;
-    font-size: 3em;
+    font-size: 3vw;
     font-weight: 700;
     background-color:#001C27;
     color: rgb(105, 170, 163);
@@ -107,18 +109,25 @@ section{
 
 .left-about{
     width: auto;  
-    text-align: center;     
+    text-align: center;    
+}
+.right-about h2{
+    font-size: 3.5vw;
+    margin-bottom: 1em;
 }
 
-.right-about{
-    font-family: 'Lobster', cursive;
-    font-size: 2em;
-    font-weight: 700;
-    line-height: 2em;
-    background-color: #001C27;
+.right-about {
+    font-size: 2.5vw;
+    line-height: 1.5em;
     color: rgb(105, 170, 163);
     text-align: center;
     margin-top: 60px;
+}
+.text-laCasa{
+    font-size: 1.5vw;
+    color: rgb(105, 170, 163);
+    text-align: center;
+
 }
 
 .slideshow-container{
@@ -134,42 +143,54 @@ section{
     height: 400px;
 }
 
-#prevBtn{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    left: 5%;
-    font-size: 2em;
-    opacity: 0.9;
-    color:white;
+#slideshow{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-#nextBtn{
-    cursor: pointer;
+#slideshow #slider{
     position: absolute;
-    top: 50%;
-    z-index: 10;
-    right: 5%;
-    font-size: 2em;
-    opacity: 0.9;
-    color:white
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    
+} 
+#slideshow .navigationSlide{
+    position: absolute;
+    bottom: -310px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
+#slideshow .navigationSlide li{
+  list-style: none;
+  cursor: pointer;
+  margin: 10px;
+}
+#slideshow .navigationSlide li img{
+   width: 150px;
+   border: 4px solid #fff;
+   border-radius: 4px;
 
-.hr-green{
-    border: 1px solid rgbrgb(105, 170, 163);
 }
 
 .meny-container{
-    position: relative;
-    font-family: 'Lobster', cursive;
+    margin-top: 250px;
     display: flex;
     background-color: #001C27;
     color: rgb(105, 170, 163);
     flex-direction: column;
     align-items: center;
     max-width: 100%;
-    padding: 1em;
+    height: 50%;
+
 
 }
 
@@ -179,7 +200,7 @@ section{
     width: 100%;
 }
 .meny-laCasa h1{
-    font-size: 3em;
+    font-size: 4em;
 }
 .meny-child-first{
     text-align: center; 
@@ -215,8 +236,8 @@ section{
 
 .meny-btn{
     padding: 0.5rem;
-    font-size: 1em; 
-    font-weight: 500;
+    font-size: 1.5em; 
+    font-weight: 600;
     background-color: #001C27;
     border-color: rgb(75,132,125);
     border-radius: 1.2rem;
@@ -226,6 +247,9 @@ section{
 .meny-btn:hover{
     background-color: rgb(75,132,125);
     color: #001C27;
+}
+.hr-green{
+    border: 1px solid rgb(105, 170, 163);
 }
 .contact{
     padding:40px;
@@ -237,11 +261,10 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 3em;
 }
 .contact .title h2{
-    font-family: 'Lobster', cursive;
     font-size: 1.5em;
     font-weight: 500;
     color:rgb(105, 170, 163);
@@ -272,7 +295,6 @@ section{
     grid-gap: 20px;
 }
 .contact h3{
-    font-family: 'Lobster', cursive;
     color: rgb(105, 170, 163);
     text-align: center;
     margin-bottom: 1em;
@@ -345,7 +367,7 @@ section{
  }
 .inputBox input [type="submit"]{
     background: white;
-    color:  rgb(38, 136, 126);
+    color:  rgb(105, 170, 163);
     border: none;
     font-size: 1.3em;
     max-width: 120px;
@@ -376,7 +398,6 @@ section{
 }
 .info .infoBox div p{
        color: rgb(75,132,125);
-       font-family: 'Lobster', cursive;
        font-weight: bold;
 }   
 .info .infoBox div a{
@@ -420,7 +441,6 @@ section{
     align-items: center;
 }
 .footer h3{
-    font-family: 'Lobster', cursive;
     color: rgb(105, 170, 163);
     text-align: center;
     margin-bottom: 1em;
@@ -428,13 +448,38 @@ section{
     font-weight: 500;
 }
 .footer p{
-    font-family: 'Lobster', cursive;
     color: rgb(105, 170, 163);
     text-align: center;
     margin-bottom: 1em;
     font-size: 1em;
     font-weight: 500;
 }
+
+/* Menu */
+.antipasti {
+    color: rgb(105, 170, 163);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    margin-top: 1em;
+    font-size: 1.5vw;
+
+}
+.antipasti h1{
+    font-size: 2vw;
+    color: rgb(105, 170, 163);
+    
+}
+.antipasti h3{
+    margin-top: 1.5em;
+    font-size: 1.5vw;
+}
+.antipasti p{
+    margin-top: 2em;
+}
+
+
 
 
 /* On smaller screens, decrease text size */
@@ -473,8 +518,30 @@ section{
     .navbar-links.active{
         display: flex;
     }
+    .animate h1{
+        font-size: 12vw;
+        color: rgb(105, 170, 163);
+    }
+    .right-about h2{
+        font-size: 12vw;
+        margin-bottom: 1em;
+    }
+    
+    .right-about {
+        font-size: 6.5vw;
+        line-height: 1.5em;
+        color: rgb(105, 170, 163);
+        text-align: center;
+        margin-top: 60px;
+    }
+    .text-laCasa{
+        font-size: 5.5vw;
+        color: rgb(105, 170, 163);
+        text-align: center;
+    
+    }
     .meny-laCasa h1{
-        font-size: 5em;
+        font-size: 12vw;
     }
     .meny-child-first{
         text-align: center; 
@@ -482,12 +549,12 @@ section{
         
     }
     .meny-child-first h3{
-        font-size: 5vw;
+        font-size: 7vw;
         margin: 0;
         padding: 0;
     }
     .meny-child-first p{
-        font-size: 5vw;
+        font-size: 6vw;
         margin: 0;
         padding: 0;
     }
@@ -497,15 +564,35 @@ section{
         
     }
     .meny-child-second h3{
-        font-size: 5vw;
+        font-size: 7vw;
         margin: 0;
         padding: 0;
         
     }
     .meny-child-second p{
-        font-size: 5vw;
+        font-size: 6vw;
         margin: 0;
         padding: 0;
+    }
+    .meny-btn{
+        margin-top: 20px;
+        font-size: 5vw;
+    }
+    .contact .title h2{
+        font-size: 8vw;
+    }
+    .contact h3{
+        font-size: 6vw;
+    }
+
+    .antipasti{
+        font-size: 3vw;
+    }
+    .antipasti h1{
+        font-size: 5vw;
+    }
+    .antipasti h3{
+        font-size: 4vw;
     }
     
 }
@@ -525,6 +612,10 @@ section{
         "info"
         "map";
 
+    }
+    #slideshow .navigationSlide li img{
+        width: 3.5rem;
+        height: 4rem;
     }
     
     .formBox .row50{
@@ -555,7 +646,7 @@ section{
     }
     .sci{
         font-size: 1.5em;
-        padding-left: 5em;
+        padding-left: 2.5em;
         padding-bottom: 20px;
     }
 
