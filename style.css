@@ -37,6 +37,7 @@ section{
     cursor: pointer;
     font-size: 3.5rem;
     margin: .6rem;
+    margin-left: 2rem;
 }
 
 .brand-title:hover {
@@ -58,10 +59,11 @@ section{
 }
 
 .navbar-links li a {
-    padding: .5rem 1rem;
+    padding: 2rem 1.5rem;
     display: block;
     text-decoration: none;
     color: rgb(218,226,213);
+    margin-right: 2rem;
     
 }
 
@@ -69,10 +71,8 @@ section{
     color:rgb(105, 170, 163);
 }
 .navbar-links li:hover a {
-    border-bottom: 2px solid rgb(105, 170, 163);
+    border-bottom: 3px solid rgb(105, 170, 163);
 }   
-
-
 
 .toggle-button {
     position: absolute;
@@ -91,43 +91,48 @@ section{
     border-radius: 10px;
     
 }
-
-.animate h1{
-    font-size: 3vw;
-    font-weight: 700;
-    background-color:#001C27;
-    color: rgb(105, 170, 163);
-    text-align: center;
+.hero-section {
+   margin: 0;
+   padding: 0;
+}
+.hero-section .text {
+    background: none;
+    font-size: 4.5vw;
+    font-weight: 500;
+    color: rgb(218,226,213);
     word-spacing: 100vw;
-    margin-top: 60px;
+    line-height: 1.3;
+    position: absolute;
+    object-fit: cover;
+    top: 15rem;
+    left: 2.5rem;
 }
-
-.image-lacasa{  
-    margin-top: 60px;
-    max-width: 100%;   
+#aboutImg{
+    width:100%;
+    height: 60rem;
+    opacity: 0.4;
+    margin:0;
+    padding: 0;
+    margin-top: 0rem;
 }
-
-.left-about{
-    width: auto;  
-    text-align: center;    
+.about-section {
+    padding: 1rem;
+    margin: 0;
+    background: #001C27;
 }
-.right-about h2{
-    font-size: 3.5vw;
-    margin-bottom: 1em;
+.about-section .hero-about{
+   text-align: center;
+   color: rgb(105, 170, 163);
+   font-size: 2rem;
+   font-weight: 100;
+   margin-top: 5rem;
+   margin-bottom:5rem;
+   line-height: 1.5;
 }
-
-.right-about {
-    font-size: 2.5vw;
-    line-height: 1.5em;
-    color: rgb(105, 170, 163);
-    text-align: center;
-    margin-top: 60px;
-}
-.text-laCasa{
-    font-size: 1.5vw;
-    color: rgb(105, 170, 163);
-    text-align: center;
-
+.about-section .hero-about h2{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 .slideshow-container{
@@ -145,6 +150,7 @@ section{
 
 #slideshow{
     position: relative;
+    opacity: 0.7;
     height: 100%;
     width: 100%;
     display: flex;
@@ -190,8 +196,6 @@ section{
     align-items: center;
     max-width: 100%;
     height: 50%;
-
-
 }
 
 .meny-menu{
@@ -509,7 +513,7 @@ section{
     .navbar-links li {
         width: 100%;
         text-align: center;
-        padding: 0px 20px;
+        padding: 5px 20px;
     }   
     .navbar-links li a {
        
@@ -518,27 +522,43 @@ section{
     .navbar-links.active{
         display: flex;
     }
-    .animate h1{
-        font-size: 12vw;
-        color: rgb(105, 170, 163);
+    .brand-title {
+        margin-left: 0rem;
     }
-    .right-about h2{
-        font-size: 12vw;
-        margin-bottom: 1em;
+  
+    #aboutImg{
+        width: 100%;
+        height: 24rem;
+        opacity: 0.4;
+        margin: 0;
+        padding: 0;
+        
     }
-    
-    .right-about {
+    .hero-section .text{
+        background: none;
+        font-size: 12vw;
+        font-weight: 500;
+        text-align: center;
+        color: rgb(218,226,213);
+        word-spacing: 100vw;
+        line-height: 1.5;
+        position: inherit;
+        object-fit: cover;
+        margin-top: -20rem;
+
+    }
+    .about-section{
+        width: 100%;
+        height: auto;
+        
+    }
+    .about-section .hero-about{
         font-size: 6.5vw;
-        line-height: 1.5em;
         color: rgb(105, 170, 163);
         text-align: center;
-        margin-top: 60px;
-    }
-    .text-laCasa{
-        font-size: 5.5vw;
-        color: rgb(105, 170, 163);
-        text-align: center;
-    
+        margin-top: 7rem;
+        margin-bottom:3rem;
+        line-height: 1.6;
     }
     .meny-laCasa h1{
         font-size: 12vw;
