@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+    background: #001C27;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.navbar {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar-links{
+    display:none;
+    width: 100%;
+}
+.navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+}
+.navbar-links li {
+    width: 100%;
+    text-align: center;
+    padding: 5px 20px;
+}   
+.navbar-links li a {  
+    padding: .5rem 1rem;
+}
+.navbar-links.active{
+    display: flex;
+}
+.brand-title {
+    margin-left: 0rem;
+}
+.toggle-button{
+    display: flex;
+}
+
+#aboutImg{
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section .text{
+    position: relative;
+    width: 82%;
+    height: auto;
+    font-size: 12vw;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(218,226,213);
+    line-height: 1.5;
+    opacity: 0.8;
+    top: -25rem;
+    margin-right: 4rem;
+}
+.about-section{
+    width: 100%;
+    height: auto;
+    
+}
+.about-section .hero-about{
+    font-size: 4.5vw;
+    color: rgb(105, 170, 163);
+    text-align: center;
+    margin-top: -20rem;
+    margin-bottom:3rem;
+    line-height: 1.6;
+}
+#slideshow .navigationSlide li img{
+    width: 10rem;
+    height: 4rem;
+}
+.meny-container{
+    margin-top: 20rem;
+}
+.meny-laCasa h1{
+    font-size: 10vw;
+}
+.meny-child-first{
+    text-align: center; 
+    margin-top: 60px;
+    
+}
+.meny-child-first h3{
+    font-size: 7vw;
+    margin: 0;
+    padding: 0;
+}
+.meny-child-first p{
+    font-size: 6vw;
+    margin: 0;
+    padding: 0;
+}
+.meny-child-second{
+    text-align: center; 
+    margin-top: 60px;
+    
+}
+.meny-child-second h3{
+    font-size: 7vw;
+    margin: 0;
+    padding: 0;
+    
+}
+.meny-child-second p{
+    font-size: 6vw;
+    margin: 0;
+    padding: 0;
+}
+.meny-btn{
+    margin-top: 20px;
+    font-size: 5vw;
+}
+.contact{
+    padding: 30px;
+}
+.contact .title h2{
+    font-size: 8vw;
+}
+.contact h3{
+    font-size: 6vw;
+}
+.box{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "form"
+    "info"
+    "map";
+}
+#slideshow .navigationSlide li img{
+    width: 3.5rem;
+    height: 4rem;
+}
+
+.formBox .row50{
+    flex-direction: column;
+    display: flex;
+    gap:o;
+}
+.formBox .row200{
+    left: 0%;
+    width: 100%;
+
+}
+.inputBox{
+    width: 100%;
+}
+.contact{
+    padding: 10px;  
+}
+.info .infoBox div{
+    margin-bottom: 1em;
+}
+.info .infoBox div span{
+    font-size: 1.5em;
+}
+.map{
+    min-height: 400px;
+    padding: 0;
+}
+.sci{
+    font-size: 2.5em;
+    padding-left: 5.5em;
+    padding-bottom: px;
+}

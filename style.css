@@ -6,7 +6,9 @@
     padding: 0;  
     background: #001C27;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 li, a, button{
     font-weight: 700;
     font-size: 1.1em;
@@ -16,22 +18,24 @@ li, a, button{
 li, a, button:hover{
     color:  rgb(8, 70, 62);
 } 
-
 section{
     padding: 5em 2em;
 }
 
+/* NAVBAR */
 .navbar {
     padding: 9px 10px !important;
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     position: relative;
     justify-content: space-between;
     align-items: center;
     background-color: #001C27;
     color: rgb(218,226,213);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
-
 .brand-title {
     font-family: 'Lobster', cursive;
     cursor: pointer;
@@ -39,25 +43,20 @@ section{
     margin: .6rem;
     margin-left: 2rem;
 }
-
 .brand-title:hover {
     color: rgb(105, 170, 163);
 }
-   
 .navbar-links {
     height: -7rem;
 }
-
 .navbar-links ul {
     display: flex;
     margin: 0;
     padding: 0;
 }
-
 .navbar-links li {
     list-style: none;
 }
-
 .navbar-links li a {
     padding: 2rem 1.5rem;
     display: block;
@@ -66,14 +65,12 @@ section{
     margin-right: 2rem;
     
 }
-
 .navbar-links li a:hover{
     color:rgb(105, 170, 163);
 }
 .navbar-links li:hover a {
     border-bottom: 3px solid rgb(105, 170, 163);
 }   
-
 .toggle-button {
     position: absolute;
     top: 2.7em;
@@ -88,32 +85,34 @@ section{
     width: 100%;
     height: 3px;
     background-color: rgb(218,226,213);
-    border-radius: 10px;
-    
+    border-radius: 10px;  
 }
+
+/* HERO */
 .hero-section {
    margin: 0;
    padding: 0;
 }
 .hero-section .text {
+    position: absolute;
     background: none;
     font-size: 4.5vw;
     font-weight: 500;
     color: rgb(218,226,213);
     word-spacing: 100vw;
     line-height: 1.3;
-    position: absolute;
     object-fit: cover;
     top: 15rem;
     left: 2.5rem;
 }
 #aboutImg{
     width:100%;
-    height: 60rem;
+    height:50rem;
     opacity: 0.4;
     margin:0;
     padding: 0;
     margin-top: 0rem;
+    
 }
 .about-section {
     padding: 1rem;
@@ -135,6 +134,7 @@ section{
     margin-bottom: 1rem;
 }
 
+/* SLIDE */
 .slideshow-container{
     text-align: center;
     margin-top: 60px;
@@ -187,6 +187,7 @@ section{
 
 }
 
+/* MENU */
 .meny-container{
     margin-top: 250px;
     display: flex;
@@ -197,7 +198,6 @@ section{
     max-width: 100%;
     height: 50%;
 }
-
 .meny-menu{
     padding: 0;
     margin: 0;
@@ -237,7 +237,6 @@ section{
     margin: 0;
     padding: 0;
 }
-
 .meny-btn{
     padding: 0.5rem;
     font-size: 1.5em; 
@@ -255,6 +254,8 @@ section{
 .hr-green{
     border: 1px solid rgb(105, 170, 163);
 }
+
+/* CONTACT */
 .contact{
     padding:40px;
     background:#001C27;
@@ -273,7 +274,6 @@ section{
     font-weight: 500;
     color:rgb(105, 170, 163);
 }
-
 .box{
     position: relative;
 }
@@ -287,7 +287,6 @@ section{
     grid-area: map;
     background: #FFFFFF;
 }
-
 .box{
     position: relative;
     display: grid;
@@ -334,7 +333,6 @@ section{
     width: 30%;
     cursor: pointer;
 }
-
 .inputBox span{
     margin-top: 10px;
     margin-bottom: 5px;
@@ -349,7 +347,6 @@ section{
     border: 2px solid rgb(38, 136, 126);
     border-radius: 15px;
     font-weight: bold;
-
 }
 .inputBox input:hover{
     background-color: rgb(75,132,125);
@@ -379,11 +376,9 @@ section{
     cursor: pointer;
     padding: 14px 15px;
  }
-
  .inbutBox input ::placeholder{
     color: #999;
  }
-
  .info .infoBox div{
     display: flex;
     align-items: center;
@@ -408,7 +403,7 @@ section{
        color: rgb(75,132,125);
        text-decoration: none;
 }
-
+/* Social */
 .sci{
    margin-top: 40px;
    display: flex;
@@ -434,6 +429,7 @@ section{
    height: 100%;
 }
 
+/* FOOTER */
 .footer{
     position: relative;
     background: #001C27;
@@ -459,7 +455,7 @@ section{
     font-weight: 500;
 }
 
-/* Menu */
+/* MENU */
 .antipasti {
     color: rgb(105, 170, 163);
     display: flex;
@@ -485,15 +481,9 @@ section{
 
 
 
+/*
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
-
-
-/* responsive Navbar with hamburger menu*/
-@media (max-width: 600px) {
+@media (max-width: 530px) {
     .toggle-button{
         display: flex;
     }
@@ -539,12 +529,13 @@ section{
         font-size: 12vw;
         font-weight: 500;
         text-align: center;
+        justify-content: left;
         color: rgb(218,226,213);
         word-spacing: 100vw;
         line-height: 1.5;
-        position: inherit;
         object-fit: cover;
-        margin-top: -20rem;
+        top: -10rem;
+        margin-right: 2rem;
 
     }
     .about-section{
@@ -617,9 +608,278 @@ section{
     
 }
 
-@media (max-width: 991px){
+
+
+
+/* On smaller screens, decrease text size 
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+    
+  }
+
+
+/* responsive Navbar with hamburger menu
+@media (min-width:320px) {
+    .toggle-button{
+        display: flex;
+    }
+    
+    .navbar-links{
+        display:none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        width: 100%;
+        text-align: center;
+        padding: 5px 20px;
+    }   
+    .navbar-links li a {
+       
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+    .brand-title {
+        margin-left: 0rem;
+    }
+  
+    #aboutImg{
+        width: 100%;
+        height: 24rem;
+        opacity: 0.4;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .hero-section .text{
+        background: none;
+        font-size: 12vw;
+        font-weight: 500;
+        text-align: center;
+        justify-content: left;
+        color: rgb(218,226,213);
+        word-spacing: 100vw;
+        line-height: 1.5;
+        object-fit: cover;
+        top: 0rem;
+        margin-right: 2rem;
+
+    }
+    .about-section{
+        width: 100%;
+        height: auto;
+        
+    }
+    .about-section .hero-about{
+        font-size: 6.5vw;
+        color: rgb(105, 170, 163);
+        text-align: center;
+        margin-top: 7rem;
+        margin-bottom:3rem;
+        line-height: 1.6;
+    }
+    .meny-laCasa h1{
+        font-size: 12vw;
+    }
+    .meny-child-first{
+        text-align: center; 
+        margin-top: 60px;
+        
+    }
+    .meny-child-first h3{
+        font-size: 7vw;
+        margin: 0;
+        padding: 0;
+    }
+    .meny-child-first p{
+        font-size: 6vw;
+        margin: 0;
+        padding: 0;
+    }
+    .meny-child-second{
+        text-align: center; 
+        margin-top: 60px;
+        
+    }
+    .meny-child-second h3{
+        font-size: 7vw;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .meny-child-second p{
+        font-size: 6vw;
+        margin: 0;
+        padding: 0;
+    }
+    .meny-btn{
+        margin-top: 20px;
+        font-size: 5vw;
+    }
+    .contact .title h2{
+        font-size: 8vw;
+    }
+    .contact h3{
+        font-size: 6vw;
+    }
+
+    .antipasti{
+        font-size: 3vw;
+    }
+    .antipasti h1{
+        font-size: 5vw;
+    }
+    .antipasti h3{
+        font-size: 4vw;
+    }
+    
+}
+
+
+@media (min-width:801px) {
     body{
         background: #001C27;
+    }
+    .hero-section .text{
+        font-size: 10vw;
+        margin-top: -40rem;
+    }
+    .about-section .hero-about h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-top: 10rem;
+    }
+    .about-section .hero-about h3 {
+        font-size: 2rem;
+    
+    }
+     
+    .about-section{
+        width: 100%;
+        height: auto;
+        margin-top: -3em;
+        
+    }
+    .meny-laCasa h1{
+        font-size: 12vw;
+        margin-top: 1em;
+    }
+    .contact{
+        padding: 30px;
+    }
+    .box{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "form"
+        "info"
+        "map";
+    }
+    #slideshow .navigationSlide li img{
+        width: 3.5rem;
+        height: 4rem;
+    }
+    
+    .formBox .row50{
+        flex-direction: column;
+        display: flex;
+        gap:o;
+    }
+    .formBox .row200{
+        left: 0%;
+        width: 100%;
+
+    }
+    .inputBox{
+        width: 100%;
+    }
+    .contact{
+        padding: 10px;  
+    }
+    .info .infoBox div{
+        margin-bottom: 1em;
+    }
+    .info .infoBox div span{
+        font-size: 1.5em;
+    }
+    .map{
+        min-height: 400px;
+        padding: 0;
+    }
+    .sci{
+        font-size: 1.5em;
+        padding-left: 2.5em;
+        padding-bottom: px;
+    }
+
+}
+
+@media (max-width: 901px) {
+    body{
+        background: #001C27;
+    }
+    .hero-section .text{
+        font-size: 12vw;
+        margin-top: 10rem;
+    }
+    .about-section .hero-about h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-top: 4rem;
+    }
+    .about-section .hero-about h3 {
+        font-size: 2rem;
+    
+    }
+    .about-section{
+        width: 100%;
+        height: auto;
+        margin-top: -3em;
+        
+    }
+    .meny-laCasa h1{
+        font-size: 8vw;
+        margin-top: 1em;
+    }
+    .meny-child-first{
+        text-align: center; 
+        margin-top: 60px;
+        
+    }
+    .meny-child-first h3{
+        font-size: 3vw;
+        margin: 0;
+        padding: 0;
+    }
+    .meny-child-first p{
+        font-size: 2.5vw;
+        margin: 0;
+        padding: 0;
+    }
+    .meny-child-second{
+        text-align: center; 
+        margin-top: 60px;
+        
+    }
+    .meny-child-second h3{
+        font-size: 3vw;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .meny-child-second p{
+        font-size: 2.5vw;
+        margin: 0;
+        padding: 0;
     }
     .contact{
         padding: 30px;
@@ -666,10 +926,11 @@ section{
     }
     .sci{
         font-size: 1.5em;
-        padding-left: 2.5em;
+        padding-left: 10em;
         padding-bottom: 20px;
     }
 
 }
 
 
+*/
