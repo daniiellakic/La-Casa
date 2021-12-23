@@ -51,7 +51,7 @@ html, body {
 
 .hero-section .text{
     position: relative;
-    width: 86%;
+    width: 8%;
     height: auto;
     font-size: 12vw;
     font-weight: 500;
@@ -68,10 +68,10 @@ html, body {
     
 }
 .about-section .hero-about{
-    font-size: 4.5vw;
+    font-size: 6vw;
     color: rgb(105, 170, 163);
     text-align: center;
-    margin-top: -22rem;
+    margin-top: -16rem;
     margin-bottom:3rem;
     line-height: 1.6;
 }
@@ -120,8 +120,12 @@ html, body {
     margin-top: 20px;
     font-size: 5vw;
 }
+#slideshow .navigationSlide li img{
+    width: 3.5rem;
+    height: 4rem;
+}
 .contact{
-    padding: 30px;
+    padding: 10px;
 }
 .contact .title h2{
     font-size: 8vw;
@@ -137,11 +141,6 @@ html, body {
     "info"
     "map";
 }
-#slideshow .navigationSlide li img{
-    width: 3.5rem;
-    height: 4rem;
-}
-
 .formBox .row50{
     flex-direction: column;
     display: flex;

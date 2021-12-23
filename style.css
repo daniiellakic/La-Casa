@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;  
-    background: #001C27;
+    background: #512133;
 }
 html{
     scroll-behavior: smooth;
@@ -12,11 +12,11 @@ html{
 li, a, button{
     font-weight: 700;
     font-size: 1.1em;
-    color: #001C27;
+    color: #512133;
     text-decoration: none;
 }
 li, a, button:hover{
-    color:  rgb(8, 70, 62);
+    color:  #31111d;
 } 
 section{
     padding: 5em 2em;
@@ -30,21 +30,23 @@ section{
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #001C27;
-    color: rgb(218,226,213);
+    background-color: #FEF8E9;
+    color:#512133;
     position: sticky;
     top: 0;
     z-index: 9999;
 }
 .brand-title {
+    background-color: #FEF8E9;
     font-family: 'Lobster', cursive;
     cursor: pointer;
     font-size: 3.5rem;
     margin: .6rem;
     margin-left: 2rem;
+
 }
 .brand-title:hover {
-    color: rgb(105, 170, 163);
+    color: #990038;
 }
 .navbar-links {
     height: -7rem;
@@ -56,22 +58,25 @@ section{
 }
 .navbar-links li {
     list-style: none;
+    background-color:#FEF8E9;
 }
 .navbar-links li a {
+    background-color:#FEF8E9;
     padding: 2rem 1.5rem;
     display: block;
     text-decoration: none;
-    color: rgb(218,226,213);
+    color: #512133;
     margin-right: 2rem;
     
 }
 .navbar-links li a:hover{
-    color:rgb(105, 170, 163);
+    color:#990038;
 }
 .navbar-links li:hover a {
-    border-bottom: 3px solid rgb(105, 170, 163);
+    border-bottom: 3px solid #990038;
 }   
 .toggle-button {
+    background-color: #FEF8E9;
     position: absolute;
     top: 2.7em;
     right:1.5em;
@@ -82,10 +87,14 @@ section{
     height: 21px;
 }
 .toggle-button .bar{
+    background-color: #FEF8E9;
     width: 100%;
     height: 3px;
-    background-color: rgb(218,226,213);
+    background-color: #512133;
     border-radius: 10px;  
+}
+.toggle-button .bar:hover{
+    color:#990038;
 }
 
 /* HERO */
@@ -98,7 +107,7 @@ section{
     background: none;
     font-size: 4.5vw;
     font-weight: 500;
-    color: rgb(218,226,213);
+    color: #FEF8E9;
     word-spacing: 100vw;
     line-height: 1.3;
     object-fit: cover;
@@ -108,7 +117,7 @@ section{
 #aboutImg{
     width:100%;
     height:50rem;
-    opacity: 0.4;
+    opacity: 0.8;
     margin:0;
     padding: 0;
     margin-top: 0rem;
@@ -117,19 +126,20 @@ section{
 .about-section {
     padding: 1rem;
     margin: 0;
-    background: #001C27;
+    background: #512133;
 }
 .about-section .hero-about{
    text-align: center;
-   color: rgb(105, 170, 163);
-   font-size: 2rem;
+   color:  #FEF8E9;
+   font-size: 1.5rem;
    font-weight: 100;
-   margin-top: 5rem;
+   margin-top: 1rem;
    margin-bottom:5rem;
    line-height: 1.5;
 }
 .about-section .hero-about h2{
-    font-size: 4rem;
+    text-align: center;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -152,7 +162,7 @@ section{
     position: relative;
     opacity: 0.7;
     height: 100%;
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,15 +170,14 @@ section{
 #slideshow #slider{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     width: 100%;
     height: 300%;
-    
 } 
 #slideshow .navigationSlide{
     position: absolute;
-    bottom: -310px;
-    left: 50%;
+    bottom: -410px;
+    left: 100%;
     transform: translateX(-50%);
     z-index: 100;
     justify-content: center;
@@ -189,10 +198,10 @@ section{
 
 /* MENU */
 .meny-container{
-    margin-top: 250px;
+    margin-top: 24rem;
     display: flex;
-    background-color: #001C27;
-    color: rgb(105, 170, 163);
+    background-color: #512133;
+    color: #FEF8E9;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
@@ -204,7 +213,8 @@ section{
     width: 100%;
 }
 .meny-laCasa h1{
-    font-size: 4em;
+    font-size: 4vw;
+    font-weight: 200;
 }
 .meny-child-first{
     text-align: center; 
@@ -241,26 +251,34 @@ section{
     padding: 0.5rem;
     font-size: 1.5em; 
     font-weight: 600;
-    background-color: #001C27;
-    border-color: rgb(75,132,125);
-    border-radius: 1.2rem;
+    background-color: #512133;
+    border-color: #FEF8E9;
+    border-radius: 1rem;
     cursor: pointer;
-    color: rgb(105, 170, 163);
+    color: #FEF8E9;
 }
 .meny-btn:hover{
-    background-color: rgb(75,132,125);
-    color: #001C27;
+    background-color: #512133;
+    color: #FEF8E9;
 }
 .hr-green{
-    border: 1px solid rgb(105, 170, 163);
+    border: 1px solid #FEF8E9;
 }
 
 /* CONTACT */
+#booking{
+    position: relative;
+    background: #512133;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .contact{
-    padding:40px;
-    background:#001C27;
-    box-shadow: 0 5px 35px rgba(0,0,0,0.2);
-    margin-top: -2em;
+    background:#512133;
+    margin-top: 1em;
 }
 .contact .title{
     display: flex;
@@ -272,7 +290,7 @@ section{
 .contact .title h2{
     font-size: 1.5em;
     font-weight: 500;
-    color:rgb(105, 170, 163);
+    color:#FEF8E9;
 }
 .box{
     position: relative;
@@ -298,17 +316,16 @@ section{
     grid-gap: 20px;
 }
 .contact h3{
-    color: rgb(105, 170, 163);
+    color: #FEF8E9;
     text-align: center;
     margin-bottom: 1em;
-    font-size: 2em;
+    font-size: 3vw;
     font-weight: 200;
 }
 /* Form box */
 .formBox{
     position: relative;
     width: 100%;
-    
 }
 .formBox .row50{
    display: flex;
@@ -320,16 +337,17 @@ section{
     flex-direction: column;
     margin-bottom: 10px;
     width: 50%;
-    color: rgb(38, 136, 126);
+    color: #FEF8E9;
+
 }
 .formBox .row100 .inputBox{
-    width: 100%;
+    width: 100%;   
 
 }
 .formBox .row200{
     gap:20px;
     position: absolute;
-    left: 43%;
+    left: 63%;
     width: 30%;
     cursor: pointer;
 }
@@ -337,44 +355,50 @@ section{
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: 500;
-    color: rgb(105, 170, 163);
+    color: #FEF8E9;
 }
 .inputBox input{
-    color: rgb(38, 136, 126);
+    color: #FEF8E9;
     padding: 10px; 
     font-size: 1.2em;
     outline: none;
-    border: 2px solid rgb(38, 136, 126);
+    border: 2px solid#FEF8E9;
     border-radius: 15px;
     font-weight: bold;
 }
 .inputBox input:hover{
-    background-color: rgb(75,132,125);
+    background-color: #FEF8E9;
     color: #001C27;
     cursor: pointer;
     font-weight: bold;
 }
  .inputBox textarea{
-     padding:10px;
-     color: rgb(38, 136, 126);
-     font-size: 1.1em;
+     color: #FEF8E9;
+     font-size: 1.3em;
+     padding: 0.5rem;
      outline:none;
      border: 2x solid rgba(0,0,0,0.2);
      resize: none;
      min-height: 220px;
      margin-bottom: 10px;
      border-radius: 15px;
-     border-color: rgb(38, 136, 126);
+     border-color: #FEF8E9;
  }
-.inputBox input [type="submit"]{
-    background: white;
-    color:  rgb(105, 170, 163);
-    border: none;
-    font-size: 1.3em;
-    max-width: 120px;
-    font-weight: 500;
-    cursor: pointer;
-    padding: 14px 15px;
+ .formBox .row200{
+    left: 46%;
+    width: 100%;
+}
+.inputBox2 input {
+    position: relative;
+    padding: 0.5rem;
+    font-size: 1.5em; 
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #FEF8E9;;
+    background-color: #512133;
+    border-color: #FEF8E9;
+    border-radius: 1rem;
+    cursor: pointer;   
  }
  .inbutBox input ::placeholder{
     color: #999;
@@ -382,57 +406,60 @@ section{
  .info .infoBox div{
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 .info .infoBox div span{
     min-width: 40px;
     height: 40px;
-    color: rgb(38, 136, 126);
+    color: #FEF8E9;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #001C27;
+    background: #512133;
     border-radius:50%;
     margin-right: 15px;
 }
 .info .infoBox div p{
-       color: rgb(75,132,125);
-       font-weight: bold;
+    color: #FEF8E9;
+    font-weight: bold;
 }   
 .info .infoBox div a{
-       color: rgb(75,132,125);
-       text-decoration: none;
+    color: #FEF8E9;
+    text-decoration: none;
 }
 /* Social */
 .sci{
    margin-top: 40px;
    display: flex;
-   margin-left: 15px;
 }
 .sci li{
    list-style: none;
-   margin-right: 15px;
 }
 .sci li a{
-   color: rgb(75,132,125);
-   font-size: 2em;
+   color: #FEF8E9;
+   font-size: 4em;
    
 }
 .sci li a:hover{
-   color: rgb(14, 75, 69);
+   color: #990038;
 }
 .map{
-   padding: 0px;
+   width: 50%;
+   height: 400px;
+   margin-left:auto;
+   margin-right:auto;
+   margin-top: -15rem;
+    
 }
 .map iframe{
-   width: 100%;
-   height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 /* FOOTER */
 .footer{
     position: relative;
-    background: #001C27;
+    background: #512133;
     width: 100%;
     min-height: 100px;
     padding: 20px 10px;
@@ -441,14 +468,14 @@ section{
     align-items: center;
 }
 .footer h3{
-    color: rgb(105, 170, 163);
+    color: #FEF8E9;
     text-align: center;
     margin-bottom: 1em;
     font-size: 2em;
     font-weight: 500;
 }
 .footer p{
-    color: rgb(105, 170, 163);
+    color: #FEF8E9;
     text-align: center;
     margin-bottom: 1em;
     font-size: 1em;
@@ -457,7 +484,7 @@ section{
 
 /* MENU */
 .antipasti {
-    color: rgb(105, 170, 163);
+    color: #FEF8E9;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -468,7 +495,7 @@ section{
 }
 .antipasti h1{
     font-size: 2vw;
-    color: rgb(105, 170, 163);
+    color: #FEF8E9;
     
 }
 .antipasti h3{
@@ -480,146 +507,29 @@ section{
 }
 
 
-
-/*
-
-@media (max-width: 530px) {
-    .toggle-button{
-        display: flex;
-    }
-    
-    .navbar-links{
-        display:none;
-        width: 100%;
-    }
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-    .navbar-links li {
-        width: 100%;
-        text-align: center;
-        padding: 5px 20px;
-    }   
-    .navbar-links li a {
-       
-        padding: .5rem 1rem;
-    }
-    .navbar-links.active{
-        display: flex;
-    }
-    .brand-title {
-        margin-left: 0rem;
-    }
-  
-    #aboutImg{
-        width: 100%;
-        height: 24rem;
-        opacity: 0.4;
-        margin: 0;
-        padding: 0;
-        
-    }
-    .hero-section .text{
-        background: none;
-        font-size: 12vw;
-        font-weight: 500;
-        text-align: center;
-        justify-content: left;
-        color: rgb(218,226,213);
-        word-spacing: 100vw;
-        line-height: 1.5;
-        object-fit: cover;
-        top: -10rem;
-        margin-right: 2rem;
-
-    }
-    .about-section{
-        width: 100%;
-        height: auto;
-        
-    }
-    .about-section .hero-about{
-        font-size: 6.5vw;
-        color: rgb(105, 170, 163);
-        text-align: center;
-        margin-top: 7rem;
-        margin-bottom:3rem;
-        line-height: 1.6;
-    }
-    .meny-laCasa h1{
-        font-size: 12vw;
-    }
-    .meny-child-first{
-        text-align: center; 
-        margin-top: 60px;
-        
-    }
-    .meny-child-first h3{
-        font-size: 7vw;
-        margin: 0;
-        padding: 0;
-    }
-    .meny-child-first p{
-        font-size: 6vw;
-        margin: 0;
-        padding: 0;
-    }
-    .meny-child-second{
-        text-align: center; 
-        margin-top: 60px;
-        
-    }
-    .meny-child-second h3{
-        font-size: 7vw;
-        margin: 0;
-        padding: 0;
-        
-    }
-    .meny-child-second p{
-        font-size: 6vw;
-        margin: 0;
-        padding: 0;
-    }
-    .meny-btn{
-        margin-top: 20px;
-        font-size: 5vw;
-    }
-    .contact .title h2{
-        font-size: 8vw;
-    }
-    .contact h3{
-        font-size: 6vw;
-    }
-
-    .antipasti{
-        font-size: 3vw;
-    }
-    .antipasti h1{
-        font-size: 5vw;
-    }
-    .antipasti h3{
-        font-size: 4vw;
-    }
-    
-}
-
-
-
-
-/* On smaller screens, decrease text size 
+/*RESPONSIVE*/
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
-    
   }
 
-
-/* responsive Navbar with hamburger menu
-@media (min-width:320px) {
+@media (max-width: 600px) {
+    #aboutImg{
+        width: 100%;
+        height: 24rem;
+    }
+    .hero-section .text{
+        color: #FEF8E9;
+        width: 8%;
+        position: relative;
+        height: auto;
+        font-size: 12vw;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.5;
+        opacity: 0.9;
+        top: -22rem;
+        margin-right: 4rem;
+    }
     .toggle-button{
         display: flex;
     }
@@ -639,7 +549,7 @@ section{
     .navbar-links li {
         width: 100%;
         text-align: center;
-        padding: 5px 20px;
+        padding: 0px 20px;
     }   
     .navbar-links li a {
        
@@ -648,59 +558,53 @@ section{
     .navbar-links.active{
         display: flex;
     }
-    .brand-title {
-        margin-left: 0rem;
-    }
-  
-    #aboutImg{
-        width: 100%;
-        height: 24rem;
-        opacity: 0.4;
-        margin: 0;
-        padding: 0;
-        
-    }
-    .hero-section .text{
-        background: none;
-        font-size: 12vw;
-        font-weight: 500;
+    .about-section .hero-about{
         text-align: center;
-        justify-content: left;
-        color: rgb(218,226,213);
-        word-spacing: 100vw;
+        color:  #FEF8E9;
+        font-size: 1.5rem;
+        font-weight: 100;
+        margin-top: -10rem;
+        margin-bottom:5rem;
         line-height: 1.5;
-        object-fit: cover;
-        top: 0rem;
-        margin-right: 2rem;
+     }
+     .meny-container{
+         margin-top: 20rem;
+     }
+    .right-about h2{
+        font-size: 12vw;
+        margin-bottom: 1em;
+    }
+
+    .right-about {
+        font-size: 6.5vw;
+        line-height: 1.5em;
+        color: #FEF8E9;
+        text-align: center;
+        margin-top: 60px;
+    }
+    .text-laCasa{
+        font-size: 5.5vw;
+        color: #FEF8E9;
+        text-align: center;
 
     }
-    .about-section{
-        width: 100%;
-        height: auto;
-        
-    }
-    .about-section .hero-about{
-        font-size: 6.5vw;
-        color: rgb(105, 170, 163);
-        text-align: center;
-        margin-top: 7rem;
-        margin-bottom:3rem;
-        line-height: 1.6;
-    }
     .meny-laCasa h1{
-        font-size: 12vw;
+        font-size: 5em;
+        font-size: 10vw;     
     }
     .meny-child-first{
         text-align: center; 
         margin-top: 60px;
-        
+
     }
     .meny-child-first h3{
+        font-size: 5vw;
         font-size: 7vw;
         margin: 0;
         padding: 0;
     }
     .meny-child-first p{
+        font-size: 5vw;
         font-size: 6vw;
         margin: 0;
         padding: 0;
@@ -708,15 +612,17 @@ section{
     .meny-child-second{
         text-align: center; 
         margin-top: 60px;
-        
+
     }
     .meny-child-second h3{
+        font-size: 5vw;
         font-size: 7vw;
         margin: 0;
         padding: 0;
-        
+
     }
     .meny-child-second p{
+        font-size: 5vw;
         font-size: 6vw;
         margin: 0;
         padding: 0;
@@ -729,7 +635,16 @@ section{
         font-size: 8vw;
     }
     .contact h3{
-        font-size: 6vw;
+        font-size: 9vw;
+    }
+    .inputBox2 input {
+        margin-left: 9rem;  
+    }
+    .sci{
+        font-size: 1em;
+        padding-left: 6em;
+        padding-left: 3em;
+        padding-bottom: 20px;
     }
 
     .antipasti{
@@ -741,145 +656,12 @@ section{
     .antipasti h3{
         font-size: 4vw;
     }
-    
-}
-
-
-@media (min-width:801px) {
-    body{
-        background: #001C27;
-    }
-    .hero-section .text{
-        font-size: 10vw;
-        margin-top: -40rem;
-    }
-    .about-section .hero-about h2 {
-        font-size: 3rem;
-        font-weight: 700;
-        margin-top: 10rem;
-    }
-    .about-section .hero-about h3 {
-        font-size: 2rem;
-    
-    }
-     
-    .about-section{
-        width: 100%;
-        height: auto;
-        margin-top: -3em;
-        
-    }
-    .meny-laCasa h1{
-        font-size: 12vw;
-        margin-top: 1em;
-    }
-    .contact{
-        padding: 30px;
-    }
-    .box{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "form"
-        "info"
-        "map";
-    }
-    #slideshow .navigationSlide li img{
-        width: 3.5rem;
-        height: 4rem;
-    }
-    
-    .formBox .row50{
-        flex-direction: column;
-        display: flex;
-        gap:o;
-    }
-    .formBox .row200{
-        left: 0%;
-        width: 100%;
-
-    }
-    .inputBox{
-        width: 100%;
-    }
-    .contact{
-        padding: 10px;  
-    }
-    .info .infoBox div{
-        margin-bottom: 1em;
-    }
-    .info .infoBox div span{
-        font-size: 1.5em;
-    }
-    .map{
-        min-height: 400px;
-        padding: 0;
-    }
-    .sci{
-        font-size: 1.5em;
-        padding-left: 2.5em;
-        padding-bottom: px;
-    }
 
 }
 
-@media (max-width: 901px) {
+@media (max-width: 1091px){
     body{
-        background: #001C27;
-    }
-    .hero-section .text{
-        font-size: 12vw;
-        margin-top: 10rem;
-    }
-    .about-section .hero-about h2 {
-        font-size: 3rem;
-        font-weight: 700;
-        margin-top: 4rem;
-    }
-    .about-section .hero-about h3 {
-        font-size: 2rem;
-    
-    }
-    .about-section{
-        width: 100%;
-        height: auto;
-        margin-top: -3em;
-        
-    }
-    .meny-laCasa h1{
-        font-size: 8vw;
-        margin-top: 1em;
-    }
-    .meny-child-first{
-        text-align: center; 
-        margin-top: 60px;
-        
-    }
-    .meny-child-first h3{
-        font-size: 3vw;
-        margin: 0;
-        padding: 0;
-    }
-    .meny-child-first p{
-        font-size: 2.5vw;
-        margin: 0;
-        padding: 0;
-    }
-    .meny-child-second{
-        text-align: center; 
-        margin-top: 60px;
-        
-    }
-    .meny-child-second h3{
-        font-size: 3vw;
-        margin: 0;
-        padding: 0;
-        
-    }
-    .meny-child-second p{
-        font-size: 2.5vw;
-        margin: 0;
-        padding: 0;
+        background: #512133;
     }
     .contact{
         padding: 30px;
@@ -897,16 +679,54 @@ section{
         width: 3.5rem;
         height: 4rem;
     }
-    
+
+    #slideshow #slider{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 200%;
+        
+    } 
+    #slideshow .navigationSlide{
+        position: absolute;
+        bottom: -270px;
+        left: 100%;
+        transform: translateX(-50%);
+        z-index: 120;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    #booking{
+        position: relative;
+        background: #512133;
+        width: 100%;
+        min-height: 100px;
+        padding: 30px 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .meny-container{
+        margin-top: 18rem;
+        display: flex;
+        background-color: #512133;
+        color: #FEF8E9;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        height: 50%;
+    }
+
     .formBox .row50{
         flex-direction: column;
         display: flex;
         gap:o;
     }
     .formBox .row200{
-        left: 0%;
-        width: 100%;
-
+        left: -3.2em;
+        width: 120%;
     }
     .inputBox{
         width: 100%;
@@ -914,23 +734,29 @@ section{
     .contact{
         padding: 10px;  
     }
+    .inputBox2 input {
+        margin-left: 9rem;  
+        width: 30%;
+    }
     .info .infoBox div{
         margin-bottom: 1em;
+        padding-left: 3.5em;
     }
     .info .infoBox div span{
         font-size: 1.5em;
     }
     .map{
-        min-height: 400px;
-        padding: 0;
-    }
+        width: 100%;
+        height: 300px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 0rem;
+         
+     }
     .sci{
-        font-size: 1.5em;
-        padding-left: 10em;
+        font-size: 1em;
+        padding-left: 5em;
         padding-bottom: 20px;
     }
 
 }
-
-
-*/
