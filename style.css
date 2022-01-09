@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: #512133;
+    background: #571717;
 }
 
 html,
@@ -58,7 +58,7 @@ button:hover {
 }
 
 .brand-title:hover {
-    color: #512133;
+    color: #571717;
 }
 
 .navbar-links {
@@ -86,11 +86,11 @@ button:hover {
 }
 
 .navbar-links li a:hover {
-    color: #512133;
+    color: #571717;
 }
 
 .navbar-links li:hover a {
-    border-bottom: 3px solid #512133;
+    border-bottom: 3px solid #571717;
 }
 
 .toggle-button {
@@ -114,7 +114,7 @@ button:hover {
 }
 
 .toggle-button .bar:hover {
-    color: #512133;
+    color: #571717;
 }
 
 
@@ -135,7 +135,7 @@ button:hover {
     word-spacing: 1vw;
     line-height: 1.5;
     object-fit: cover;
-    top: -35rem;
+    top: -34rem;
     left: 2.5rem;
 }
 
@@ -151,7 +151,7 @@ button:hover {
 .about-section {
     padding: 1rem;
     margin: 0;
-    background: #512133;
+    background: #571717;
 }
 
 .about-section .hero-about {
@@ -160,7 +160,7 @@ button:hover {
     line-height: 1.5;
     font-size: 1.5rem;
     font-weight: 100;
-    margin-top: -12rem;
+    margin-top: -14rem;
     margin-bottom: 8rem;
 }
 
@@ -431,7 +431,7 @@ meny-btn:hover {
     top: -2rem;
     font-size: 1.5em;
     font-weight: 600;
-    background-color: #512133;
+    background-color: #571717;
     border-color: #FEF8E9;
     border-radius: 1rem;
     cursor: pointer;
@@ -439,12 +439,12 @@ meny-btn:hover {
 }
 
 .meny-btn:hover {
-    background-color: #512133;
+    background-color: #571717;
     color: #FEF8E9;
 }
 
 .hr-green {
-    border: 1px solid #FEF8E9;
+    border: 1px solid #571717;
 }
 
 
@@ -452,18 +452,18 @@ meny-btn:hover {
 
 #booking {
     position: relative;
-    background: #512133;
+    background: #571717;
     width: 100%;
     min-height: 100px;
     padding: 20px 570px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: solid #411827 0.5pc;
+    border-top: solid #571717 0.5pc;
 }
 
 .contact {
-    background: #512133;
+    background: #571717;
     margin-top: 0rem;
     margin-bottom: 4rem;
 }
@@ -600,7 +600,7 @@ meny-btn:hover {
     text-transform: uppercase!important;
     letter-spacing: 3px;
     color: #fff;
-    cursor: hand;
+    cursor: pointer;
     text-align: center;
     text-transform: capitalize;
     border: 2px solid #fff;
@@ -633,7 +633,7 @@ meny-btn:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #512133;
+    background: #571717;
     border-radius: 50%;
     margin-right: 15px;
 }
@@ -691,7 +691,7 @@ meny-btn:hover {
 
 .footer {
     position: relative;
-    margin-top: -4em;
+    margin-top: -2em;
     background-color: #13060b;
     width: 100%;
     min-height: 100px;

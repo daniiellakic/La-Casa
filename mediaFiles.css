@@ -24,7 +24,8 @@
         padding: 0px 20px;
     }
     .navbar-links li a {
-        padding: .5rem 1rem;
+        padding: .6rem 0rem;
+        margin-left: 2rem;
     }
     .navbar-links.active {
         display: flex;
@@ -81,8 +82,19 @@
         font-weight: 500;
         line-height: 1.7em;
         opacity: 0.8;
-        top: -19rem;
         margin-right: 2rem;
+        top: -18rem;
+    }
+    .meny-container {
+        margin-top: -1rem;
+        display: flex;
+        background-color: #13060b;
+        color: #FEF8E9;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.5;
+        max-width: 100%;
+        height: 50%;
     }
     .meny-laCasa h1 {
         font-size: 5em;
@@ -152,7 +164,7 @@
 
 @media (max-width: 1091px) {
     body {
-        background: #512133;
+        background: #571717;
     }
     .contact {
         padding: 30px;
@@ -179,7 +191,7 @@
     }
     #booking {
         position: relative;
-        background: #512133;
+        background: #571717;
         width: 100%;
         min-height: 100px;
         padding: 30px 170px;
@@ -222,7 +234,7 @@
         text-transform: uppercase!important;
         letter-spacing: 3px;
         color: #fff;
-        cursor: hand;
+        cursor: pointer;
         text-align: center;
         text-transform: capitalize;
         border: 2px solid #fff;
@@ -259,7 +271,7 @@
         padding: 0 10px 0 20px;
     }
     .footer {
-        margin-top: -4em;
+        margin-top: -2em;
         position: relative;
         background-color: #13060b;
         width: 100%;
