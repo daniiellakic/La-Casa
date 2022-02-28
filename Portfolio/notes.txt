@@ -1,0 +1,2 @@
+1. Fixa Scroll knappar vid olika skärm storlekar 
+2. Lägg in projects
