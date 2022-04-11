@@ -1,5 +1,6 @@
 @media (max-width: 600px) {
     #aboutImg {
+        object-fit: cover;
         width: 100%;
         height: 24rem;
     }
@@ -35,9 +36,13 @@
         color: #FEF8E9;
         font-size: 1.5rem;
         font-weight: 100;
-        margin-top: -12rem;
+        margin-top: 2rem;
         margin-bottom: 5rem;
         line-height: 1.5;
+    }
+    .hero-about {
+        text-align-last: center;
+        padding: 0% 5%;
     }
     #slideshow .slide:nth-child(1) {
         background-size: 250px 650px;
@@ -87,6 +92,7 @@
     }
     .meny-container {
         margin-top: -1rem;
+        padding: 0% 5%;
         display: flex;
         background-color: #13060b;
         color: #FEF8E9;

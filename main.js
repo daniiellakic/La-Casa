@@ -75,3 +75,44 @@ window.onload = function() {
 function openPage() {
     window.open("../menu.html");
 }
+
+//open booking page
+function openBooking() {
+    window.open("../#booking");
+}
+
+//open contact page
+function openContact() {
+    window.open("../#contact");
+}
+
+
+//open pdf file
+function openFood() {
+    window.open("../img/La casa mat.pdf");
+}
+
+function openDesert() {
+    window.open("../img/La casa Desert.pdf");
+}
+
+function openDrink() {
+    window.open("../img/La casa dryck.pdf");
+}
+
+
+function openBook() {
+    window.open("../#booking");
+}
+
+function openAbout() {
+    window.open("../#about");
+}
+
+function openMeny() {
+    window.open("../#meny");
+}
+
+function openContact() {
+    window.open("../#contact");
+}

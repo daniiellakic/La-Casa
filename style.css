@@ -25,6 +25,18 @@ button {
     text-decoration: none;
 }
 
+.buttonsMeny {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #13060b;
+    text-decoration: none;
+    margin: 100px auto;
+    max-width: 960px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
 li,
 a,
 button:hover {
@@ -139,8 +151,14 @@ button:hover {
     left: 2.5rem;
 }
 
+.hero-about {
+    text-align-last: center;
+    padding: 0% 30%;
+}
+
 #aboutImg {
     width: 100%;
+    object-fit: cover;
     height: 50rem;
     opacity: 0.8;
     margin: 0;
@@ -160,7 +178,7 @@ button:hover {
     line-height: 1.5;
     font-size: 1.5rem;
     font-weight: 100;
-    margin-top: -14rem;
+    margin-top: 3rem;
     margin-bottom: 8rem;
 }
 
@@ -464,7 +482,7 @@ meny-btn:hover {
 
 .contact {
     background: #571717;
-    margin-top: 0rem;
+    margin-top: 2rem;
     margin-bottom: 4rem;
 }
 
@@ -691,7 +709,7 @@ meny-btn:hover {
 
 .footer {
     position: relative;
-    margin-top: -2em;
+    margin-top: 13em;
     background-color: #13060b;
     width: 100%;
     min-height: 100px;
