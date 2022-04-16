@@ -29,12 +29,12 @@ button {
     font-weight: 700;
     font-size: 1.1em;
     color: #13060b;
+    background-color:#13060b;;
     text-decoration: none;
     margin: 100px auto;
     max-width: 960px;
     align-items: center;
     justify-content: center;
-    display: grid;
 }
 
 li,
@@ -59,20 +59,6 @@ button:hover {
     top: 0;
     z-index: 9999;
 }
-
-.brand-title {
-    background-color: #FEF8E9;
-    font-family: 'Lobster', cursive;
-    cursor: pointer;
-    font-size: 3.5rem;
-    margin: .6rem;
-    margin-left: 2rem;
-}
-
-.brand-title:hover {
-    color: #571717;
-}
-
 .navbar-links {
     height: -7rem;
 }
@@ -95,6 +81,7 @@ button:hover {
     text-decoration: none;
     color: #13060b;
     margin-right: 2rem;
+    font-size: 1.2rem;
 }
 
 .navbar-links li a:hover {
@@ -130,6 +117,31 @@ button:hover {
 
 /* HERO */
 
+.navbar .sci-top {
+    margin-top: 10px;
+    margin-left: 2em;
+    display:flex;
+    position: static;
+    gap: 40px;
+    font-size: 0.8rem;    
+    background-color: #FEF8E9;
+    float: left;
+}
+
+.navbar .sci-top li {
+    list-style: none;
+    background-color: #FEF8E9;
+}
+
+.navbar .sci-top  li a {
+    font-size: 4em;
+    background-color: #FEF8E9;
+}
+
+.navbar .sci-top li a:hover {
+    color: #3d0218;
+}
+
 .hero-section {
     margin: 0;
     padding: 0;
@@ -138,11 +150,10 @@ button:hover {
     text-align-last: center;
     padding: 0% 30%;
 }
-
 #aboutImg {
     width: 100%;
     object-fit: cover;
-    height: 55rem;
+    height: 50rem;
     opacity: 0.8;
     margin: 0;
     padding: 0;
@@ -162,7 +173,7 @@ button:hover {
     font-size: 1.9rem;
     font-weight: 100;
     margin-top: 3rem;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 
 .about-section .hero-about h2 {
@@ -273,7 +284,7 @@ meny-btn:hover {
     margin: -2rem 0 -2rem 0;
     
 }
-/* Hide the images by default */
+
 .mySlides {
     display: none;
 }
@@ -286,11 +297,10 @@ meny-btn:hover {
     margin-top: 0rem;
 }
   
-  /* Next & previous buttons */
-  .prev, .next {
+.prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: auto;
     margin-top: -22px;
     padding: 28px;
@@ -300,21 +310,18 @@ meny-btn:hover {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
+}
   
-  /* Position the "next button" to the right */
-  .next {
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
+.prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
+}
+
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -324,22 +331,22 @@ meny-btn:hover {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
+}
   
-  .active, .dot:hover {
+.active, .dot:hover {
     background-color: #717171;
-  }
+}
   
-  /* Fading animation */
-  .fade {
+ /* Faiding animation */
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
+}
   
-  @keyframes fade {
+@keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-  }
+}
 
 
 /* MENU */
@@ -347,7 +354,6 @@ meny-btn:hover {
 #meny-section {
     background-color: #13060b;
 }
-
 .meny-container {
     display: flex;
     background-color: #13060b;
@@ -358,14 +364,12 @@ meny-btn:hover {
     height: 50%;
     border-top: solid #13060b 0.5pc;
 }
-
 .meny-menu {
     background-color: #13060b;
     padding: 0;
     margin: 0;
     width: 100%;
 }
-
 .meny-menu-item {
     background-color: #13060b;
 }
@@ -373,54 +377,47 @@ meny-btn:hover {
 .meny-laCasa {
     background-color: #13060b;
 }
-
 .meny-laCasa h1 {
     margin-top: 3rem;
     background-color: #13060b;
     font-size: 4vw;
     font-weight: 200;
 }
-
 .meny-child-first {
     background-color: #13060b;
     text-align: center;
     margin-top: 60px;
 }
-
 .meny-child-first h3 {
     background-color: #13060b;
     font-size: 2vw;
     margin: 0;
     padding: 0;
 }
-
 .meny-child-first p {
     background-color: #13060b;
     font-size: 1.5vw;
     margin: 0;
+    margin-top: 20px;
     padding: 0;
 }
-
 .meny-child-second {
     background-color: #13060b;
     text-align: center;
     margin-top: 60px;
 }
-
 .meny-child-second h3 {
     background-color: #13060b;
     font-size: 2vw;
     margin: 0;
     padding: 0;
 }
-
 .meny-child-second p {
     background-color: #13060b;
     font-size: 1.5vw;
     margin: 0;
     padding: 0;
 }
-
 .meny-btn {
     padding: 1rem;
     margin-top: 3rem;
@@ -433,16 +430,13 @@ meny-btn:hover {
     cursor: pointer;
     color: #FEF8E9;
 }
-
 .meny-btn:hover {
     background-color: #571717;
     color: #FEF8E9;
 }
-
 .hr-green {
     border: 1px solid #571717;
 }
-
 
 /* CONTACT */
 
@@ -457,13 +451,11 @@ meny-btn:hover {
     align-items: center;
     border-top: solid #571717 0.5pc;
 }
-
 .contact {
     background: #571717;
     margin-top: 2rem;
     margin-bottom: 4rem;
 }
-
 .contact .title {
     display: flex;
     justify-content: center;
@@ -471,30 +463,24 @@ meny-btn:hover {
     font-size: 3em;
     margin-bottom: 3em;
 }
-
 .contact .title h2 {
     font-size: 1.5em;
     font-weight: 500;
     color: #FEF8E9;
 }
-
 .box {
     position: relative;
 }
-
 .form {
     grid-area: form;
 }
-
 .info {
     grid-area: info;
 }
-
 .map {
     grid-area: map;
     background: #FFFFFF;
 }
-
 .box {
     position: relative;
     display: grid;
@@ -503,7 +489,6 @@ meny-btn:hover {
     grid-template-areas: "form info" "form map";
     grid-gap: 20px;
 }
-
 .contact h3 {
     color: #FEF8E9;
     text-align: center;
@@ -512,19 +497,16 @@ meny-btn:hover {
     font-weight: 200;
 }
 
-
 /* Form box */
 
 .formBox {
     position: relative;
     width: 100%;
 }
-
 .formBox .row50 {
     display: flex;
     gap: 20px;
 }
-
 .inputBox {
     display: flex;
     flex-direction: column;
@@ -532,11 +514,9 @@ meny-btn:hover {
     width: 50%;
     color: #FEF8E9;
 }
-
 .formBox .row100 .inputBox {
     width: 100%;
 }
-
 .formBox .row200 {
     gap: 20px;
     position: absolute;
@@ -544,14 +524,12 @@ meny-btn:hover {
     width: 30%;
     cursor: pointer;
 }
-
 .inputBox span {
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: 500;
     color: #FEF8E9;
 }
-
 .inputBox input {
     color: #FEF8E9;
     padding: 10px;
@@ -561,14 +539,12 @@ meny-btn:hover {
     border-radius: 15px;
     font-weight: bold;
 }
-
 .inputBox input:hover {
     background-color: #FEF8E9;
     color: #001C27;
     cursor: pointer;
     font-weight: bold;
 }
-
 .inputBox textarea {
     color: #FEF8E9;
     font-size: 1.3em;
@@ -581,12 +557,10 @@ meny-btn:hover {
     border-radius: 15px;
     border-color: #FEF8E9;
 }
-
 .formBox .row200 {
     left: 46%;
     width: 100%;
 }
-
 .inputBox2 input {
     top: 10px;
     right: 0.8em;
@@ -611,18 +585,15 @@ meny-btn:hover {
     z-index: 10;
     padding: 12px;
 }
-
 .inbutBox input ::placeholder {
     color: #999;
 }
-
 .info .infoBox div {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
     margin-left: 3rem;
 }
-
 .info .infoBox div span {
     min-width: 40px;
     height: 40px;
@@ -634,47 +605,26 @@ meny-btn:hover {
     border-radius: 50%;
     margin-right: 15px;
 }
-
 .info .infoBox div p {
     color: #FEF8E9;
     font-weight: bold;
+    font-size: 1.3em;
 }
-
 .info .infoBox div a {
     color: #FEF8E9;
     text-decoration: none;
+    font-size: 1.3em;
 }
 
-
-/* Social */
-
-.sci {
-    margin-top: 40px;
-    margin-left: 3rem;
-    display: flex;
-}
-
-.sci li {
-    list-style: none;
-}
-
-.sci li a {
-    color: #FEF8E9;
-    font-size: 4em;
-}
-
-.sci li a:hover {
-    color: #3d0218;
-}
+/* Contact */
 
 .map {
     width: 50%;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -21em;
+    margin-top: -13em;
 }
-
 .map iframe {
     width: 100%;
     height: 100%;
@@ -704,7 +654,7 @@ meny-btn:hover {
     color: #FEF8E9;
     text-align: center;
     margin-bottom: 1em;
-    font-size: 2em;
+    font-size: 2.3em;
     font-weight: 500;
 }
 
@@ -712,37 +662,11 @@ meny-btn:hover {
     background-color: #13060b;
     color: #FEF8E9;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.5em;
+    line-height: 1.5em;
     font-weight: 500;
 }
 
 .openHours {
     background-color: #13060b;
-}
-
-
-/* MENU */
-
-.antipasti {
-    color: #FEF8E9;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-    margin-top: 1em;
-    font-size: 1.5vw;
-}
-
-.antipasti h1 {
-    font-size: 2vw;
-    color: #FEF8E9;
-}
-
-.antipasti h3 {
-    margin-top: 1.5em;
-    font-size: 1.5vw;
-}
-
-.antipasti p {
-    margin-top: 2em;
 }

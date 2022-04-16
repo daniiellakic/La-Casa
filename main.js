@@ -71,11 +71,6 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
-// Button click to open menu page
-function openPage() {
-    window.open("../menu.html");
-}
-
 //open booking page
 function openBooking() {
     window.open("../#booking");

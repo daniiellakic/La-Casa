@@ -15,7 +15,19 @@
 <body>
 
     <nav class="navbar">
-        <div class="brand-title">La Casa</div>
+            <ul class="sci-top">
+                <li>
+                    <a href="https://www.facebook.com/LaCasaHornstull/">
+                        <ion-icon name="logo-facebook" style="background-color:#FEF8E9;"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/lacasa.hornstull?igshid=YmMyMTA2M2Y=">
+                        <ion-icon name="logo-instagram"  style="background-color:#FEF8E9;"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+
         <a href="#" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -123,7 +135,11 @@
                             <br> CREME BRULLEE <br> Apelsin crème brulée med färska hallon
                             <br><br> 399:-
                         </p>
-                        <button class="meny-btn" onclick="openPage()">Hela vår menyn</button>
+                        <div class="buttonsMeny ">
+                            <button style="margin:20px " class="meny-btn " onclick="openFood() ">Mat Menyn</button>
+                            <button style="margin:20px " class="meny-btn " onclick="openDesert() ">Desert Menyn</button>
+                            <button style="margin:20px " class="meny-btn " onclick="openDrink() ">Dryck Menyn</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,7 +152,7 @@
             <div class="box">
                 <div class="contact form">
                     <h3>Boka Bord</h3>
-                    <form class="form-form" action="https://formsubmit.co/danijellakic@yahoo.com" method="POST">
+                    <form class="form-form" action="https://formsubmit.co/info@lacasa.se" method="POST">
                         <!--Honeypot-->
                         <input type="text" name="_honey" style="display: none;">
                         <!--Disable Captcha-->
@@ -200,18 +216,6 @@
                     <span><ion-icon name="call"></ion-icon></span>
                     <a href="tel:">08-668 78 30</a>
                 </div>
-                <ul class="sci">
-                    <li>
-                        <a href="#">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
             </div>
 
         </div>
@@ -227,8 +231,10 @@
                 <h3>Öppettider</h3>
                 <p>
                     Måndag - Torsdag: 16:00 - 23:00 <br> Fredag: 16:00 - 24:00 <br> Lördag: 13:00 - 24:00 <br> Söndag: 13:00 - 23:00
-                    <br> <br>LaCasa @ 2021
                 </p>
+                <hr class="hr-green">
+                <p> <br>LaCasa @  2022 All rights reserved</p>
+                
             </div>
         </footer>
 </section>
