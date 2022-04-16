@@ -113,10 +113,9 @@ button:hover {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
+    width: 35px;
     height: 21px;
 }
-
 .toggle-button .bar {
     background-color: #FEF8E9;
     width: 100%;
@@ -124,7 +123,6 @@ button:hover {
     background-color: #13060b;
     border-radius: 10px;
 }
-
 .toggle-button .bar:hover {
     color: #571717;
 }
