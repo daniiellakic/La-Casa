@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="brand-title" href="index.html">La Casa</div>
+
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#booking" onclick="openBook()">Boka Bord</a></li>
+                <li><a href="#about" onclick="openAbout()" ">Om La Casa</a></li>
+                <li><a href="#meny " onclick="openMeny() "">Meny</a>
+                </li>
+                <li>
+                    <a href="#contact" onclick="openContact()" ">Kontakt</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="buttonsMeny ">
+        <button style="margin:20px " class="meny-btn " onclick="openFood() ">Mat Menyn</button>
+        <button style="margin:20px " class="meny-btn " onclick="openDesert() ">Desert Menyn</button>
+        <button style="margin:20px " class="meny-btn " onclick="openDrink() ">Dryck Menyn</button>
+
+    </div>
+
+<section class="footer section">
+        <footer>
+            <div class="openHours">
+                <h3>Öppettider</h3>
+                <p>
+                    Måndag - Torsdag: 16:00 - 23:00 <br> Fredag: 16:00 - 24:00 <br> Lördag: 13:00 - 24:00 <br> Söndag: 13:00 - 23:00
+                    <br> <br>LaCasa @ 2021
+                </p>
+            </div>
+        </footer>
+</section>
+
+    <script src="main.js "></script>
+
+</body>
+
+</html>
