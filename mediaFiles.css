@@ -44,21 +44,7 @@
         text-align-last: center;
         padding: 0% 5%;
     }
-    #slideshow .slide:nth-child(1) {
-        background-size: 250px 650px;
-    }
-    #slideshow .slide:nth-child(2) {
-        background-size: 250px 650px;
-    }
-    #slideshow .slide:nth-child(3) {
-        background-size: 250px 650px;
-    }
-    #slideshow .slide:nth-child(4) {
-        background-size: 250px 650px;
-    }
-    #slideshow .slide:nth-child(5) {
-        background-size: 250px 650px;
-    }
+
     .meny-container {
         margin-top: 20rem;
     }
@@ -142,6 +128,18 @@
         margin-top: 50px;
         font-size: 5vw;
     }
+    .prev, .next {
+        top: 80%;
+        font-size: 16px;
+    }
+    .mySlides img{
+        height: 20rem;
+        width: 100%;
+        object-fit: scale-down;
+        opacity: 0.8;
+        padding: 0;
+        margin-top: 0rem;
+    }
     .contact .title h2 {
         font-size: 8vw;
     }
@@ -166,6 +164,7 @@
     .antipasti h3 {
         font-size: 4vw;
     }
+
 }
 
 @media (max-width: 1091px) {
@@ -179,21 +178,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "form" "info" "map";
-    }
-    #slideshow .slide:nth-child(1) {
-        background-size: 250px 650px;
-    }
-    #slideshow .slide:nth-child(2) {
-        background-size: 250px 650px;
-    }
-    #slideshow .slide:nth-child(3) {
-        background-size: 250px 650px;
-    }
-    #slideshow .slide:nth-child(4) {
-        background-size: 250px 650px;
-    }
-    #slideshow .slide:nth-child(5) {
-        background-size: 250px 650px;
     }
     #booking {
         position: relative;
@@ -256,7 +240,7 @@
     }
     .info .infoBox div {
         margin-bottom: 1em;
-        padding-left: 3.5em;
+        margin-left: 3rem;
     }
     .info .infoBox div span {
         font-size: 1.5em;
@@ -270,22 +254,11 @@
     }
     .sci {
         font-size: 1em;
-        padding-left: 5em;
+        margin-left: 2rem;
         padding-bottom: 20px;
     }
     .sci li a {
         padding: 0 10px 0 20px;
-    }
-    .footer {
-        margin-top: -2em;
-        position: relative;
-        background-color: #13060b;
-        width: 100%;
-        min-height: 100px;
-        padding: 10px 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 }
 

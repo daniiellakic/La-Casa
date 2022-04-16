@@ -136,21 +136,6 @@ button:hover {
     margin: 0;
     padding: 0;
 }
-
-.hero-section .text {
-    position: relative;
-    background: none;
-    font-size: 6.5vw;
-    font-weight: 500;
-    opacity: 0.8;
-    color: #FEF8E9;
-    word-spacing: 1vw;
-    line-height: 1.5;
-    object-fit: cover;
-    top: -34rem;
-    left: 2.5rem;
-}
-
 .hero-about {
     text-align-last: center;
     padding: 0% 30%;
@@ -159,7 +144,7 @@ button:hover {
 #aboutImg {
     width: 100%;
     object-fit: cover;
-    height: 50rem;
+    height: 55rem;
     opacity: 0.8;
     margin: 0;
     padding: 0;
@@ -176,7 +161,7 @@ button:hover {
     text-align: center;
     color: #FEF8E9;
     line-height: 1.5;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-weight: 100;
     margin-top: 3rem;
     margin-bottom: 8rem;
@@ -285,83 +270,78 @@ meny-btn:hover {
 /* SLIDE */
 
 #slideshow {
-    width: 100%;
-    height: 55vh;
-    display: flex;
-}
-
-#slideshow .slide {
+    max-width: 100%;
     position: relative;
-    background: #0f0;
-    flex: 1;
-    height: 100%;
-    transition: 0.5s ease-in-out;
-    border-right: 2px solid #000;
-    overflow: hidden;
+    margin: -2rem 0 -2rem 0;
+    
 }
-
-#slideshow .slid:last-child {
-    border-right: none;
+/* Hide the images by default */
+.mySlides {
+    display: none;
 }
-
-#slideshow .slide:hover {
-    flex-grow: 5;
+.mySlides img{
+    height: 50rem;
+    width: 100%;
+    object-fit: scale-down;
+    opacity: 0.8;
+    padding: 0;
+    margin-top: 0rem;
 }
-
-#slideshow .slide:nth-child(1) {
-    background: url("img/35d3dc57-5145-4a50-8317-a066a8fa9a0d.jpg");
-    background-position: center center;
-    background-attachment: local;
-    background-size: 850px 650px;
-}
-
-#slideshow .slide:nth-child(2) {
-    background: url("img/b4fc49c4-4725-46b7-b2bb-53fe1537b2bc\ 2.JPG");
-    background-position: center center;
-    background-attachment: local;
-    background-size: 850px 650px;
-}
-
-#slideshow .slide:nth-child(3) {
-    background: url("img/ebe30cac-0058-46a9-baf0-08c5e53d76f2.jpg");
-    background-position: center center;
-    background-attachment: local;
-    background-size: 850px 650px;
-}
-
-#slideshow .slide:nth-child(4) {
-    background: url("img/ecb48dd9-4915-4df1-921c-1711b06ec552.jpg");
-    background-position: center center;
-    background-attachment: local;
-    background-size: 850px 650px;
-}
-
-#slideshow .slide:nth-child(5) {
-    background: url("img/6aea5a62-650b-48f9-874a-3440ab7e1a5c.JPG");
-    background-position: center center;
-    background-attachment: local;
-    background-size: 850px 650px;
-}
-
-#slideshow .slide .content {
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
     position: absolute;
-    bottom: 0;
-    padding: 30px;
-    background: #000;
-    color: #fff;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-    transform: translateY(100px);
-}
-
-#slideshow .slide:hover .content {
-    visibility: visible;
-    opacity: 0;
-    transition: 0.5s;
-    transition-delay: 0.5s;
-    transform: translateY(0);
-}
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 28px;
+    color: white;
+    font-weight: bold;
+    font-size: 38px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+    margin-bottom: 5rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 
 /* MENU */
@@ -579,7 +559,7 @@ meny-btn:hover {
     padding: 10px;
     font-size: 1.2em;
     outline: none;
-    border: 2px solid#FEF8E9;
+    border: 2px solid #FEF8E9;
     border-radius: 15px;
     font-weight: bold;
 }
@@ -641,7 +621,8 @@ meny-btn:hover {
 .info .infoBox div {
     display: flex;
     align-items: center;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
 }
 
 .info .infoBox div span {
@@ -671,6 +652,7 @@ meny-btn:hover {
 
 .sci {
     margin-top: 40px;
+    margin-left: 3rem;
     display: flex;
 }
 
@@ -709,7 +691,7 @@ meny-btn:hover {
 
 .footer {
     position: relative;
-    margin-top: 13em;
+    margin-top: 9em;
     background-color: #13060b;
     width: 100%;
     min-height: 100px;
