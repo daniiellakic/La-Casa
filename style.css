@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -29,7 +29,7 @@ button {
     font-weight: 700;
     font-size: 1.1em;
     color: #13060b;
-    background-color:#13060b;;
+    background-color: #13060b;
     text-decoration: none;
     margin: 100px auto;
     max-width: 960px;
@@ -48,6 +48,8 @@ button:hover {
 
 .navbar {
     padding: 9px 10px !important;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bolder;
     overflow: auto;
     display: flex;
     position: relative;
@@ -59,6 +61,7 @@ button:hover {
     top: 0;
     z-index: 9999;
 }
+
 .navbar-links {
     height: -7rem;
 }
@@ -81,7 +84,8 @@ button:hover {
     text-decoration: none;
     color: #13060b;
     margin-right: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
 }
 
 .navbar-links li a:hover {
@@ -103,6 +107,7 @@ button:hover {
     width: 35px;
     height: 21px;
 }
+
 .toggle-button .bar {
     background-color: #FEF8E9;
     width: 100%;
@@ -110,6 +115,7 @@ button:hover {
     background-color: #13060b;
     border-radius: 10px;
 }
+
 .toggle-button .bar:hover {
     color: #571717;
 }
@@ -120,10 +126,10 @@ button:hover {
 .navbar .sci-top {
     margin-top: 10px;
     margin-left: 2em;
-    display:flex;
+    display: flex;
     position: static;
     gap: 40px;
-    font-size: 0.8rem;    
+    font-size: 0.8rem;
     background-color: #FEF8E9;
     float: left;
 }
@@ -133,7 +139,7 @@ button:hover {
     background-color: #FEF8E9;
 }
 
-.navbar .sci-top  li a {
+.navbar .sci-top li a {
     font-size: 4em;
     background-color: #FEF8E9;
 }
@@ -146,10 +152,13 @@ button:hover {
     margin: 0;
     padding: 0;
 }
+
 .hero-about {
     text-align-last: center;
+    font-family: 'Indie Flower', cursive;
     padding: 0% 30%;
 }
+
 #aboutImg {
     width: 100%;
     object-fit: cover;
@@ -184,6 +193,7 @@ button:hover {
 }
 
 .buttons {
+    font-family: 'Indie Flower', cursive;
     display: flex;
     justify-content: center;
     margin-top: 3rem;
@@ -195,7 +205,7 @@ button:hover {
 
 .meny-btn {
     top: 40px;
-    font-family: "proxima-nova", sans-serif;
+    font-family: 'Indie Flower', cursive;
     font-weight: 500;
     font-size: 13px;
     text-transform: uppercase!important;
@@ -282,13 +292,13 @@ meny-btn:hover {
     max-width: 100%;
     position: relative;
     margin: -2rem 0 -2rem 0;
-    
 }
 
 .mySlides {
     display: none;
 }
-.mySlides img{
+
+.mySlides img {
     height: 50rem;
     width: 100%;
     object-fit: scale-down;
@@ -296,8 +306,9 @@ meny-btn:hover {
     padding: 0;
     margin-top: 0rem;
 }
-  
-.prev, .next {
+
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 40%;
@@ -311,14 +322,15 @@ meny-btn:hover {
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
-  
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-  
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .dot {
@@ -332,20 +344,27 @@ meny-btn:hover {
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-  
-.active, .dot:hover {
+
+.active,
+.dot:hover {
     background-color: #717171;
 }
-  
- /* Faiding animation */
+
+
+/* Faiding animation */
+
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-  
+
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 
@@ -354,22 +373,26 @@ meny-btn:hover {
 #meny-section {
     background-color: #13060b;
 }
+
 .meny-container {
     display: flex;
     background-color: #13060b;
     color: #FEF8E9;
     flex-direction: column;
+    font-family: 'Indie Flower', cursive;
     align-items: center;
     max-width: 100%;
     height: 50%;
     border-top: solid #13060b 0.5pc;
 }
+
 .meny-menu {
     background-color: #13060b;
     padding: 0;
     margin: 0;
     width: 100%;
 }
+
 .meny-menu-item {
     background-color: #13060b;
 }
@@ -377,23 +400,27 @@ meny-btn:hover {
 .meny-laCasa {
     background-color: #13060b;
 }
+
 .meny-laCasa h1 {
     margin-top: 3rem;
     background-color: #13060b;
     font-size: 4vw;
     font-weight: 200;
 }
+
 .meny-child-first {
     background-color: #13060b;
     text-align: center;
     margin-top: 60px;
 }
+
 .meny-child-first h3 {
     background-color: #13060b;
     font-size: 2vw;
     margin: 0;
     padding: 0;
 }
+
 .meny-child-first p {
     background-color: #13060b;
     font-size: 1.5vw;
@@ -401,23 +428,27 @@ meny-btn:hover {
     margin-top: 20px;
     padding: 0;
 }
+
 .meny-child-second {
     background-color: #13060b;
     text-align: center;
     margin-top: 60px;
 }
+
 .meny-child-second h3 {
     background-color: #13060b;
     font-size: 2vw;
     margin: 0;
     padding: 0;
 }
+
 .meny-child-second p {
     background-color: #13060b;
     font-size: 1.5vw;
     margin: 0;
     padding: 0;
 }
+
 .meny-btn {
     padding: 1rem;
     margin-top: 3rem;
@@ -430,32 +461,63 @@ meny-btn:hover {
     cursor: pointer;
     color: #FEF8E9;
 }
+
 .meny-btn:hover {
     background-color: #571717;
     color: #FEF8E9;
 }
+
 .hr-green {
     border: 1px solid #571717;
 }
 
-/* CONTACT */
+
+/* BOOKING */
 
 #booking {
-    position: relative;
     background: #571717;
     width: 100%;
+    padding: 10em;
     min-height: 100px;
-    padding: 20px 570px;
-    display: flex;
     justify-content: center;
     align-items: center;
     border-top: solid #571717 0.5pc;
+    margin-bottom: 6rem;
+    margin-top: -10rem;
 }
-.contact {
+
+.bookingForm h3 {
+    color: #FEF8E9;
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 3vw;
+    font-weight: 200;
+}
+
+
+/* CONTACT */
+
+#contact {
+    font-family: 'Indie Flower', cursive;
     background: #571717;
-    margin-top: 2rem;
+    margin-top: -20rem;
     margin-bottom: 4rem;
+    position: relative;
 }
+
+.contact h3 {
+    font-family: 'Indie Flower', cursive;
+    color: #FEF8E9;
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 3vw;
+    font-weight: 200;
+}
+
+.body {
+    color: #571717;
+}
+
 .contact .title {
     display: flex;
     justify-content: center;
@@ -463,32 +525,13 @@ meny-btn:hover {
     font-size: 3em;
     margin-bottom: 3em;
 }
+
 .contact .title h2 {
     font-size: 1.5em;
     font-weight: 500;
     color: #FEF8E9;
 }
-.box {
-    position: relative;
-}
-.form {
-    grid-area: form;
-}
-.info {
-    grid-area: info;
-}
-.map {
-    grid-area: map;
-    background: #FFFFFF;
-}
-.box {
-    position: relative;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 5fr 4fr;
-    grid-template-areas: "form info" "form map";
-    grid-gap: 20px;
-}
+
 .contact h3 {
     color: #FEF8E9;
     text-align: center;
@@ -497,103 +540,16 @@ meny-btn:hover {
     font-weight: 200;
 }
 
+
 /* Form box */
 
-.formBox {
-    position: relative;
-    width: 100%;
-}
-.formBox .row50 {
-    display: flex;
-    gap: 20px;
-}
-.inputBox {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    width: 50%;
-    color: #FEF8E9;
-}
-.formBox .row100 .inputBox {
-    width: 100%;
-}
-.formBox .row200 {
-    gap: 20px;
-    position: absolute;
-    left: 63%;
-    width: 30%;
-    cursor: pointer;
-}
-.inputBox span {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: 500;
-    color: #FEF8E9;
-}
-.inputBox input {
-    color: #FEF8E9;
-    padding: 10px;
-    font-size: 1.2em;
-    outline: none;
-    border: 2px solid #FEF8E9;
-    border-radius: 15px;
-    font-weight: bold;
-}
-.inputBox input:hover {
-    background-color: #FEF8E9;
-    color: #001C27;
-    cursor: pointer;
-    font-weight: bold;
-}
-.inputBox textarea {
-    color: #FEF8E9;
-    font-size: 1.3em;
-    padding: 0.5rem;
-    outline: none;
-    border: 2x solid rgba(0, 0, 0, 0.2);
-    resize: none;
-    min-height: 220px;
-    margin-bottom: 10px;
-    border-radius: 15px;
-    border-color: #FEF8E9;
-}
-.formBox .row200 {
-    left: 46%;
-    width: 100%;
-}
-.inputBox2 input {
-    top: 10px;
-    right: 0.8em;
-    font-family: "proxima-nova", sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    text-transform: uppercase!important;
-    letter-spacing: 3px;
-    color: #fff;
-    cursor: pointer;
-    text-align: center;
-    text-transform: capitalize;
-    border: 2px solid #fff;
-    border-radius: 13px;
-    position: relative;
-    overflow: hidden!important;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    background: transparent!important;
-    z-index: 10;
-    padding: 12px;
-}
-.inbutBox input ::placeholder {
-    color: #999;
-}
 .info .infoBox div {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
     margin-left: 3rem;
 }
+
 .info .infoBox div span {
     min-width: 40px;
     height: 40px;
@@ -605,16 +561,19 @@ meny-btn:hover {
     border-radius: 50%;
     margin-right: 15px;
 }
+
 .info .infoBox div p {
     color: #FEF8E9;
     font-weight: bold;
     font-size: 1.3em;
 }
+
 .info .infoBox div a {
     color: #FEF8E9;
     text-decoration: none;
     font-size: 1.3em;
 }
+
 
 /* Contact */
 
@@ -625,6 +584,7 @@ meny-btn:hover {
     margin-right: auto;
     margin-top: -13em;
 }
+
 .map iframe {
     width: 100%;
     height: 100%;
@@ -645,6 +605,7 @@ meny-btn:hover {
     min-height: 100px;
     padding: 10px 20px;
     display: flex;
+    font-family: 'Indie Flower', cursive;
     justify-content: center;
     align-items: center;
 }

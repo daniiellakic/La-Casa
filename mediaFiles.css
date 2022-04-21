@@ -49,7 +49,7 @@
     .navbar .sci-top {
         margin-top: 30px;
         margin-left: 1em;
-        gap: 10px;  
+        gap: 10px;
     }
     .meny-container {
         margin-top: 20rem;
@@ -134,12 +134,12 @@
         margin-top: 50px;
         font-size: 5vw;
     }
-
-    .prev, .next {
+    .prev,
+    .next {
         top: 75%;
         font-size: 16px;
     }
-    .mySlides img{
+    .mySlides img {
         height: 20rem;
         width: 100%;
         object-fit: scale-down;
@@ -147,17 +147,36 @@
         padding: 0;
         margin-top: 0rem;
     }
+    .contact {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        /* full with of irfame */
+        height: 100%;
+        /* full height of irfame */
+        /* background color */
+        background-size: cover;
+        /* 100% cover of irfame */
+        background-position: center;
+        /* center the image */
+        background-repeat: no-repeat;
+        /* do not repeat the image */
+        position: relative;
+        /* position the image */
+        z-index: 1;
+        /* make sure that wide is 100% */
+        min-width: 22em;
+    }
     .contact .title h2 {
         font-size: 8vw;
     }
     .contact h3 {
         font-size: 9vw;
     }
-    .inputBox2 input {
-        margin-left: 9rem;
+    #booking {
+        margin-top: -1rem;
+        margin-bottom: -1rem;
     }
-
-
 }
 
 @media (max-width: 1091px) {
@@ -173,6 +192,7 @@
         grid-template-areas: "form" "info" "map";
     }
     #booking {
+        margin-bottom: 16rem;
         position: relative;
         background: #571717;
         width: 100%;
@@ -184,6 +204,7 @@
     }
     .meny-container {
         margin-top: -1rem;
+        margin-bottom: 3rem;
         display: flex;
         background-color: #13060b;
         color: #FEF8E9;
@@ -245,7 +266,6 @@
         margin-right: auto;
         margin-top: 0rem;
     }
-
 }
 
 @media only screen and (min-device-width: 600px) and (max-device-width: 980px) {
@@ -372,8 +392,6 @@
         background: transparent!important;
         z-index: 10;
     }
-
-   
     .meny-laCasa h1 {
         margin-top: 3rem;
         background-color: #13060b;
