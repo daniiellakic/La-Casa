@@ -89,7 +89,7 @@
     }
     .footer {
         margin-top: 10rem;
-        padding: 20px;
+        padding: 25px;
         line-height: 0.6;
     }
     .r-footer>* {
@@ -267,7 +267,7 @@
     }
     #booking {
         margin-top: -1rem;
-        margin-bottom: -8rem;
+        margin-bottom: -10rem;
     }
 }
 
