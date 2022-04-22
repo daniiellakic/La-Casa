@@ -84,6 +84,9 @@
         font-size: 1.5em;
         margin-left: 0.1rem;
     }
+    #contact {
+        margin-top: 0rem;
+    }
     .map {
         width: 100%;
         height: 600px;
@@ -246,20 +249,12 @@
         position: relative;
         width: 100%;
         text-align: center;
-        /* full with of irfame */
         height: 100%;
-        /* full height of irfame */
-        /* background color */
         background-size: cover;
-        /* 100% cover of irfame */
         background-position: center;
-        /* center the image */
         background-repeat: no-repeat;
-        /* do not repeat the image */
         position: relative;
-        /* position the image */
         z-index: 1;
-        /* make sure that wide is 100% */
         min-width: 22em;
     }
     .contact .title h2 {
@@ -267,6 +262,9 @@
     }
     .contact h3 {
         font-size: 9vw;
+    }
+    .contact {
+        padding: 10px;
     }
     #booking {
         margin-top: -1rem;
