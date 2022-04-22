@@ -546,8 +546,8 @@ meny-btn:hover {
 .info .infoBox div {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
-    margin-left: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 30rem;
 }
 
 .info .infoBox div span {
@@ -565,23 +565,20 @@ meny-btn:hover {
 .info .infoBox div p {
     color: #FEF8E9;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .info .infoBox div a {
     color: #FEF8E9;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
-
-/* Contact */
-
 .map {
-    width: 50%;
+    width: 30%;
     height: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 55em;
+    margin-right: 0em;
     margin-top: -13em;
 }
 
