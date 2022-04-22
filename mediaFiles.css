@@ -1,3 +1,98 @@
+@media (max-width: 1091px) {
+    body {
+        background: #571717;
+    }
+    .contact {
+        padding: 30px;
+    }
+    .box {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "form" "info" "map";
+    }
+    #booking {
+        margin-bottom: 16rem;
+        position: relative;
+        background: #571717;
+        width: 100%;
+        min-height: 100px;
+        padding: 30px 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .meny-container {
+        margin-top: -1rem;
+        margin-bottom: 3rem;
+        display: flex;
+        background-color: #13060b;
+        color: #FEF8E9;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        height: 50%;
+    }
+    .formBox .row50 {
+        flex-direction: column;
+        display: flex;
+        gap: o;
+    }
+    .formBox .row200 {
+        left: -3.2em;
+        width: 120%;
+    }
+    .inputBox {
+        width: 100%;
+    }
+    .contact {
+        padding: 10px;
+    }
+    .inputBox2 input {
+        top: 10px;
+        right: -5em;
+        padding: 12px;
+        font-family: "proxima-nova", sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        text-transform: uppercase!important;
+        letter-spacing: 3px;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+        text-transform: capitalize;
+        border: 2px solid #fff;
+        border-radius: 13px;
+        position: relative;
+        overflow: hidden!important;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        background: transparent!important;
+        z-index: 10;
+    }
+    .info .infoBox div {
+        margin-bottom: 3em;
+        margin-left: 2rem;
+    }
+    .info .infoBox div span {
+        font-size: 1.5em;
+    }
+    .info .infoBox div p {
+        color: #FEF8E9;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-left: 0.1rem;
+    }
+    .map {
+        width: 100%;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0rem;
+    }
+}
+
 @media (max-width: 600px) {
     #aboutImg {
         object-fit: cover;
@@ -176,94 +271,6 @@
     #booking {
         margin-top: -1rem;
         margin-bottom: -1rem;
-    }
-}
-
-@media (max-width: 1091px) {
-    body {
-        background: #571717;
-    }
-    .contact {
-        padding: 30px;
-    }
-    .box {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "form" "info" "map";
-    }
-    #booking {
-        margin-bottom: 16rem;
-        position: relative;
-        background: #571717;
-        width: 100%;
-        min-height: 100px;
-        padding: 30px 170px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .meny-container {
-        margin-top: -1rem;
-        margin-bottom: 3rem;
-        display: flex;
-        background-color: #13060b;
-        color: #FEF8E9;
-        flex-direction: column;
-        align-items: center;
-        max-width: 100%;
-        height: 50%;
-    }
-    .formBox .row50 {
-        flex-direction: column;
-        display: flex;
-        gap: o;
-    }
-    .formBox .row200 {
-        left: -3.2em;
-        width: 120%;
-    }
-    .inputBox {
-        width: 100%;
-    }
-    .contact {
-        padding: 10px;
-    }
-    .inputBox2 input {
-        top: 10px;
-        right: -5em;
-        padding: 12px;
-        font-family: "proxima-nova", sans-serif;
-        font-weight: bold;
-        font-size: 25px;
-        text-transform: uppercase!important;
-        letter-spacing: 3px;
-        color: #fff;
-        cursor: pointer;
-        text-align: center;
-        text-transform: capitalize;
-        border: 2px solid #fff;
-        border-radius: 13px;
-        position: relative;
-        overflow: hidden!important;
-        -webkit-transition: all .3s ease-in-out;
-        -moz-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out;
-        background: transparent!important;
-        z-index: 10;
-    }
-    .info .infoBox div {
-        margin-bottom: 3em;
-        margin-left: 2rem;
-    }
-    .info .infoBox div span {
-        font-size: 1.5em;
-    }
-    .info .infoBox div p {
-        color: #FEF8E9;
-        font-weight: bold;
-        font-size: 1.5em;
-        margin-left: 0.1rem;
     }
     .map {
         width: 100%;
