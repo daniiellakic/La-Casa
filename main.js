@@ -108,7 +108,7 @@ function openMeny() {
 }
 
 function openContact() {
-    window.open("../#contact");
+    window.open("../#footerId");
 }
 
 let slideIndex = 1;
@@ -144,7 +144,8 @@ function showSlides(n) {
     captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
-//close hamburgare menu when click in links    
-function closeMenu() {
-    document.getElementsByClassName("navbar-links")[0].classList.toggle("active");
-}
+document.addEventListener("click", (e) => {
+    if (e.target == navEl) {
+        navEl.classList.remove("active");
+    }
+});
