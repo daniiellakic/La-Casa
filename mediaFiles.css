@@ -72,7 +72,8 @@
         z-index: 10;
     }
     .info .infoBox div {
-        margin-bottom: 3em;
+        text-align: center;
+        float: inline-end;
         margin-left: 2rem;
     }
     .info .infoBox div span {
