@@ -253,11 +253,17 @@
         z-index: 10;
     }
     .info .infoBox div {
-        margin-bottom: 4em;
+        margin-bottom: 3em;
         margin-left: 2rem;
     }
     .info .infoBox div span {
         font-size: 1.5em;
+    }
+    .info .infoBox div p {
+        color: #FEF8E9;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-left: 0.1rem;
     }
     .map {
         width: 100%;
