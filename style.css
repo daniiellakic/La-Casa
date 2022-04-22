@@ -483,7 +483,7 @@ meny-btn:hover {
     align-items: center;
     border-top: solid #571717 0.5pc;
     margin-bottom: 6rem;
-    margin-top: -10rem;
+    margin-top: -7rem;
 }
 
 .bookingForm h3 {
@@ -500,7 +500,7 @@ meny-btn:hover {
 #contact {
     font-family: 'Indie Flower', cursive;
     background: #571717;
-    margin-top: -20rem;
+    margin-top: -28rem;
     margin-bottom: 4rem;
     position: relative;
 }

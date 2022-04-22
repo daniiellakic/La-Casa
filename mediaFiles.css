@@ -15,8 +15,7 @@
         position: relative;
         background: #571717;
         width: 100%;
-        min-height: 100px;
-        padding: 30px 170px;
+        padding: 10px 170px;
         display: flex;
         justify-content: center;
         align-items: center;
