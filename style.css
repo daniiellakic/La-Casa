@@ -500,8 +500,8 @@ meny-btn:hover {
 #contact {
     font-family: 'Indie Flower', cursive;
     background: #571717;
-    margin-top: -28rem;
-    margin-bottom: 4rem;
+    margin-top: -20rem;
+    margin-bottom: 3rem;
     position: relative;
 }
 
@@ -576,7 +576,7 @@ meny-btn:hover {
 
 .map {
     width: 30%;
-    height: 400px;
+    height: 320px;
     margin-left: 55em;
     margin-right: 0em;
     margin-top: -13em;
