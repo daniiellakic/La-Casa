@@ -87,12 +87,14 @@
     #contact {
         margin-top: 0rem;
     }
-    .map {
-        width: 100%;
-        height: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0rem;
+    .footer {
+        margin-top: 10rem;
+        padding: 20px;
+        line-height: 0.6;
+    }
+    .r-footer>* {
+        margin-right: 0em;
+        margin-bottom: 3em;
     }
 }
 
@@ -267,13 +269,6 @@
         margin-top: -1rem;
         margin-bottom: -8rem;
     }
-    .map {
-        width: 100%;
-        height: 320px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0rem;
-    }
 }
 
 @media only screen and (min-device-width: 600px) and (max-device-width: 980px) {
@@ -444,5 +439,26 @@
     .info .infoBox div {
         margin-bottom: 1em;
         padding-left: 15em;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .r-footer>* {
+        flex: 1;
+    }
+    .map {
+        width: 80%;
+        height: 250px;
+        flex-grow: 2;
+    }
+    .map iframe {
+        width: 100%;
+        height: 100%;
+    }
+    .l-footer {
+        flex: 1 0px;
+    }
+    .r-footer {
+        flex: 2 0px;
     }
 }
