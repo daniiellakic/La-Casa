@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Casa</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaFiles.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaFiles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 </head>
@@ -28,18 +28,14 @@
             </li>
         </ul>
 
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
+        <a href="#" class="toggle"></a>
 
-        <div class="navbar-links">
+        <div class="navigation">
             <ul>
-                <li><a href="#booking">Boka Bord</a></li>
-                <li><a href="#about">Om La Casa</a></li>
-                <li><a href="#meny">Meny</a></li>
-                <li><a href="#footerId">Kontakt</a></li>
+                <li><a onclick="closeNav()" href="#booking">Boka Bord</a></li>
+                <li><a onclick="closeNav()" href="#about">Om La Casa</a></li>
+                <li><a onclick="closeNav()" href="#meny">Meny</a></li>
+                <li><a onclick="closeNav()" href="#footerId">Kontakt</a></li>
             </ul>
         </div>
     </nav>
@@ -58,10 +54,15 @@
                 <button style="margin:20px" class="meny-btn" onclick="openBooking()">Boka Bord</button>
                 <button style="margin:20px" class="meny-btn" onclick="openContact()">Kontakta Oss</button>
             </div>
+
+
         </section>
+
     </section>
 
     <section id="slideshow">
+
+        <p>All pizza rebatterat med 20kr vid avhämtning!</p>
 
 
         <!-- Full-width images with number and caption text -->
@@ -136,7 +137,7 @@
                         </p>
                         <div class="buttonsMeny ">
                             <button style="margin:20px " class="meny-btn " onclick="openFood() ">Mat Menyn</button>
-                            <button style="margin:20px " class="meny-btn " onclick="openDesert() ">Desert Menyn</button>
+                            <button style="margin:20px " class="meny-btn " onclick="openDesert() ">Dessert Menyn</button>
                             <button style="margin:20px " class="meny-btn " onclick="openDrink() ">Dryck Menyn</button>
                         </div>
                     </div>
@@ -201,10 +202,12 @@
     </section>
 
 
-
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="main.js"></script>
+
+
+
 
 </body>
 

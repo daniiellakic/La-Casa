@@ -1,12 +1,21 @@
-// Toggle menu
-const toggleButton = document.getElementsByClassName('toggle-button')[0];
-const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+//////////////////////// Toggle menu ////////////////////////
+var toggle = document.querySelector('.toggle');
+var navigation = document.querySelector('.navigation');
 
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active');
+toggle.addEventListener('click', function() {
+    toggle.classList.toggle('active');
+    navigation.classList.toggle('active');
 });
+//////////////////////////////////////////////////////////////////////// 
 
 
+////////////////////////// Close navbar on click ///////////////////////////////  
+function closeNav() {
+    navigation.classList.remove('active');
+    toggle.classList.remove('active');
+}
+
+//////////////////////// //////////////////////////////////////////////// 
 window.onload = function() {
     var elements = document.getElementsByClassName('txt-rotate');
     for (var i = 0; i < elements.length; i++) {
@@ -23,19 +32,21 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
+//////////////////////// //////////////////////////////////////////////// 
+
 //open booking page
 function openBooking() {
-    window.open("../#booking");
+    window.location.href = "#booking";
 }
 
 //open contact page
 function openContact() {
-    window.open("../#contact");
+    window.location.href = "#contact";
 }
 
 //open pdf file
 function openFood() {
-    window.open("../img/La casa mat.pdf");
+    window.open("../img/La casa huvudmeny.pdf");
 }
 
 function openDesert() {
@@ -66,7 +77,8 @@ function openContact() {
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+
+////////////////////////  Next/previous controls //////////////////////// 
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
@@ -75,8 +87,7 @@ function plusSlides(n) {
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
-
-//Sideshow 
+////////////////////////// Sideshow  //////////////////////// 
 
 function showSlides(n) {
     let i;
@@ -101,3 +112,31 @@ document.addEventListener("click", (e) => {
         navEl.classList.remove("active");
     }
 });
+
+/////////////////////////  Sslideshow images changes every 3 seconds ///////////////////////// 
+
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("active", "");
+
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+
+}
+var timer = setInterval(function() {
+    slideIndex++;
+    showSlides(slideIndex);
+}, 3000);
+
+/////////////////////// /////////////////////// //////////////////////

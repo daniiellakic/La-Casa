@@ -1,0 +1,464 @@
+@media (max-width: 1091px) {
+    body {
+        background: #571717;
+    }
+    .contact {
+        padding: 30px;
+    }
+    .box {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "form" "info" "map";
+    }
+    #booking {
+        margin-bottom: 16rem;
+        position: relative;
+        background: #571717;
+        width: 100%;
+        padding: 10px 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .meny-container {
+        margin-top: -1rem;
+        margin-bottom: 3rem;
+        display: flex;
+        background-color: #13060b;
+        color: #FEF8E9;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        height: 50%;
+    }
+    .formBox .row50 {
+        flex-direction: column;
+        display: flex;
+        gap: o;
+    }
+    .formBox .row200 {
+        left: -3.2em;
+        width: 120%;
+    }
+    .inputBox {
+        width: 100%;
+    }
+    .contact {
+        padding: 10px;
+    }
+    .inputBox2 input {
+        top: 10px;
+        right: -5em;
+        padding: 12px;
+        font-family: "proxima-nova", sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        text-transform: uppercase!important;
+        letter-spacing: 3px;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+        text-transform: capitalize;
+        border: 2px solid #fff;
+        border-radius: 13px;
+        position: relative;
+        overflow: hidden!important;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        background: transparent!important;
+        z-index: 10;
+    }
+    .info .infoBox div {
+        text-align: center;
+        float: inline-end;
+        margin-left: 2rem;
+    }
+    .info .infoBox div span {
+        font-size: 1.5em;
+    }
+    .info .infoBox div p {
+        color: #FEF8E9;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-left: 0.1rem;
+    }
+    #contact {
+        margin-top: 0rem;
+    }
+    .footer {
+        margin-top: 10rem;
+        padding: 25px;
+        line-height: 0.6;
+    }
+    .r-footer>* {
+        margin-right: 0em;
+        margin-bottom: 3em;
+    }
+}
+
+@media (max-width: 600px) {
+    #aboutImg {
+        object-fit: cover;
+        width: 100%;
+        height: 26rem;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        width: 100%;
+        text-align: center;
+        padding: 0px 20px;
+        font-size: 6vw;
+    }
+    .navbar-links li a {
+        padding: .9rem 1rem;
+        margin-left: 2rem;
+        line-height: 4rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    .about-section .hero-about {
+        text-align: center;
+        color: #FEF8E9;
+        font-size: 1.5rem;
+        font-weight: 100;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        line-height: 1.5;
+    }
+    .hero-about {
+        text-align-last: center;
+        padding: 0% 5%;
+    }
+    .navbar .sci-top {
+        margin-top: 30px;
+        margin-left: 1em;
+        gap: 10px;
+    }
+    .meny-container {
+        margin-top: 20rem;
+    }
+    .right-about h2 {
+        font-size: 12vw;
+        margin-bottom: 1em;
+    }
+    .right-about {
+        font-size: 6.5vw;
+        line-height: 1.5em;
+        color: #FEF8E9;
+        text-align: center;
+        margin-top: 60px;
+    }
+    .text-laCasa {
+        font-size: 5.5vw;
+        color: #FEF8E9;
+        text-align: center;
+    }
+    .hero-section .text {
+        color: #FEF8E9;
+        position: relative;
+        height: auto;
+        word-spacing: vw;
+        font-size: 14vw;
+        font-weight: 500;
+        line-height: 1.7em;
+        opacity: 0.8;
+        margin-right: 2rem;
+        top: -18rem;
+    }
+    .meny-container {
+        margin-top: -1rem;
+        padding: 0% 5%;
+        display: flex;
+        background-color: #13060b;
+        color: #FEF8E9;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.5;
+        max-width: 100%;
+        height: 50%;
+    }
+    .meny-laCasa h1 {
+        font-size: 5em;
+        font-size: 10vw;
+    }
+    .meny-child-first {
+        text-align: center;
+        margin-top: 60px;
+    }
+    .meny-child-first h3 {
+        font-size: 5vw;
+        font-size: 7vw;
+        margin: 0;
+        padding: 0;
+    }
+    .meny-child-first p {
+        font-size: 5vw;
+        font-size: 6vw;
+        margin: 0;
+        padding: 0;
+    }
+    .meny-child-second {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .meny-child-second h3 {
+        font-size: 5vw;
+        font-size: 7vw;
+        margin: 0;
+        padding: 0;
+    }
+    .meny-child-second p {
+        font-size: 5vw;
+        font-size: 6vw;
+        margin: 0;
+        padding: 0;
+    }
+    .meny-btn {
+        margin-top: 50px;
+        font-size: 5vw;
+    }
+    .prev,
+    .next {
+        top: 75%;
+        font-size: 16px;
+    }
+    .mySlides img {
+        height: 20rem;
+        width: 100%;
+        object-fit: scale-down;
+        opacity: 0.8;
+        padding: 0;
+        margin-top: 0rem;
+    }
+    .contact {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+        min-width: 22em;
+    }
+    .contact .title h2 {
+        font-size: 8vw;
+    }
+    .contact h3 {
+        font-size: 9vw;
+    }
+    #booking {
+        margin-top: -1rem;
+        margin-bottom: -10rem;
+    }
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 980px) {
+    .hero-section .text {
+        color: #FEF8E9;
+        position: relative;
+        height: auto;
+        word-spacing: vw;
+        font-size: 10vw;
+        font-weight: 500;
+        line-height: 1.5em;
+        opacity: 0.8;
+        top: -30rem;
+        margin-right: 2rem;
+    }
+    .inputBox2 input {
+        top: 10px;
+        right: -5em;
+        padding: 12px;
+        font-family: "proxima-nova", sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        text-transform: uppercase!important;
+        letter-spacing: 3px;
+        color: #fff;
+        cursor: hand;
+        text-align: center;
+        text-transform: capitalize;
+        border: 2px solid #fff;
+        border-radius: 13px;
+        position: relative;
+        overflow: hidden!important;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        background: transparent!important;
+        z-index: 10;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        width: 100%;
+        text-align: center;
+        padding: 0px 20px;
+        font-size: 6vw;
+    }
+    .navbar-links li a {
+        padding: .9rem 1rem;
+        margin-left: 2rem;
+        line-height: 4rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    .info .infoBox div {
+        margin-bottom: 1em;
+        margin-left: 0rem;
+    }
+}
+
+@media only screen and (min-device-width: 250px) and (max-device-width: 812px) {
+    .inputBox2 input {
+        top: 10px;
+        right: 0.5em;
+        padding: 12px;
+        font-family: "proxima-nova", sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        text-transform: uppercase!important;
+        letter-spacing: 3px;
+        color: #fff;
+        cursor: hand;
+        text-align: center;
+        text-transform: capitalize;
+        border: 2px solid #fff;
+        border-radius: 13px;
+        position: relative;
+        overflow: hidden!important;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        background: transparent!important;
+        z-index: 10;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .inputBox2 input {
+        top: 10px;
+        right: -5em;
+        padding: 12px;
+        font-family: "proxima-nova", sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        text-transform: uppercase!important;
+        letter-spacing: 3px;
+        color: #fff;
+        cursor: hand;
+        text-align: center;
+        text-transform: capitalize;
+        border: 2px solid #fff;
+        border-radius: 13px;
+        position: relative;
+        overflow: hidden!important;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        background: transparent!important;
+        z-index: 10;
+    }
+    .meny-laCasa h1 {
+        margin-top: 3rem;
+        background-color: #13060b;
+        font-size: 5vw;
+        font-weight: 200;
+    }
+    .meny-child-first {
+        text-align: center;
+        margin-top: 60px;
+    }
+    .meny-child-first h3 {
+        font-size: 4vw;
+        margin: 0;
+        padding: 0;
+    }
+    .meny-child-first p {
+        font-size: 3vw;
+        margin: 0;
+        padding: 0;
+    }
+    .meny-child-second {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .meny-child-second h3 {
+        font-size: 4vw;
+        margin: 0;
+        padding: 0;
+    }
+    .meny-child-second p {
+        font-size: 3vw;
+        margin: 0;
+        padding: 0;
+    }
+    .contact h3 {
+        color: #FEF8E9;
+        text-align: center;
+        margin-bottom: 1em;
+        font-size: 4vw;
+        font-weight: 200;
+    }
+    .info .infoBox div {
+        margin-bottom: 1em;
+        padding-left: 15em;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .r-footer>* {
+        flex: 1;
+    }
+    .map {
+        width: 80%;
+        height: 250px;
+        flex-grow: 2;
+    }
+    .map iframe {
+        width: 100%;
+        height: 100%;
+    }
+    .l-footer {
+        flex: 1 0px;
+    }
+    .r-footer {
+        flex: 2 0px;
+    }
+}
